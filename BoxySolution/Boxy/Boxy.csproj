@@ -54,6 +54,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="quitConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quitConfirmation.Designer.cs">
+      <DependentUpon>quitConfirmation.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Boxy.resx">
       <DependentUpon>Boxy.cs</DependentUpon>
     </EmbeddedResource>
@@ -67,6 +73,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="quitConfirmation.resx">
+      <DependentUpon>quitConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -91,6 +100,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\quitbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exitbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yesbuttonwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelbuttonwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setsizemenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setsizewarehouse.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

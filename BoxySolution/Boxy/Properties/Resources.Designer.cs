@@ -63,6 +63,26 @@ namespace Boxy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cancelbuttonwhite {
+            get {
+                object obj = ResourceManager.GetObject("cancelbuttonwhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap exitbox {
+            get {
+                object obj = ResourceManager.GetObject("exitbox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap learnbutton {
             get {
                 object obj = ResourceManager.GetObject("learnbutton", resourceCulture);
@@ -96,6 +116,36 @@ namespace Boxy.Properties {
         internal static System.Drawing.Bitmap quitbutton {
             get {
                 object obj = ResourceManager.GetObject("quitbutton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap setsizemenu {
+            get {
+                object obj = ResourceManager.GetObject("setsizemenu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap setsizewarehouse {
+            get {
+                object obj = ResourceManager.GetObject("setsizewarehouse", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap yesbuttonwhite {
+            get {
+                object obj = ResourceManager.GetObject("yesbuttonwhite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
