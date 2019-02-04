@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.MainMenuPanel = new System.Windows.Forms.Panel();
-            this.GamePanel = new System.Windows.Forms.Panel();
-            this.GameBackground = new System.Windows.Forms.PictureBox();
             this.PlayButton = new System.Windows.Forms.Button();
             this.LearnButton = new System.Windows.Forms.Button();
             this.QuitButton = new System.Windows.Forms.Button();
+            this.GamePanel = new System.Windows.Forms.Panel();
+            this.GameBackground = new System.Windows.Forms.PictureBox();
             this.MenuBackground = new System.Windows.Forms.PictureBox();
             this.MainMenuPanel.SuspendLayout();
             this.GamePanel.SuspendLayout();
@@ -44,35 +44,15 @@
             // MainMenuPanel
             // 
             this.MainMenuPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MainMenuPanel.Controls.Add(this.GamePanel);
             this.MainMenuPanel.Controls.Add(this.PlayButton);
             this.MainMenuPanel.Controls.Add(this.LearnButton);
             this.MainMenuPanel.Controls.Add(this.QuitButton);
-            this.MainMenuPanel.Controls.Add(this.GamePanel);
             this.MainMenuPanel.Location = new System.Drawing.Point(0, 0);
             this.MainMenuPanel.Name = "MainMenuPanel";
             this.MainMenuPanel.Size = new System.Drawing.Size(352, 606);
             this.MainMenuPanel.TabIndex = 0;
             this.MainMenuPanel.UseWaitCursor = true;
-            // 
-            // GamePanel
-            // 
-            this.GamePanel.Controls.Add(this.GameBackground);
-            this.GamePanel.Controls.Add(this.MenuBackground);
-            this.GamePanel.Location = new System.Drawing.Point(0, 0);
-            this.GamePanel.Name = "GamePanel";
-            this.GamePanel.Size = new System.Drawing.Size(352, 606);
-            this.GamePanel.TabIndex = 3;
-            this.GamePanel.UseWaitCursor = true;
-            this.GamePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.GamePanel_Paint);
-            // 
-            // GameBackground
-            // 
-            this.GameBackground.Image = global::Boxy.Properties.Resources.setsizewarehouse;
-            this.GameBackground.Location = new System.Drawing.Point(0, 0);
-            this.GameBackground.Name = "GameBackground";
-            this.GameBackground.Size = new System.Drawing.Size(352, 609);
-            this.GameBackground.TabIndex = 0;
-            this.GameBackground.TabStop = false;
             // 
             // PlayButton
             // 
@@ -109,6 +89,27 @@
             this.QuitButton.UseVisualStyleBackColor = true;
             this.QuitButton.UseWaitCursor = true;
             this.QuitButton.Click += new System.EventHandler(this.QuitButton_Click);
+            // 
+            // GamePanel
+            // 
+            this.GamePanel.Controls.Add(this.MenuBackground);
+            this.GamePanel.Controls.Add(this.GameBackground);
+            this.GamePanel.Location = new System.Drawing.Point(0, 0);
+            this.GamePanel.Name = "GamePanel";
+            this.GamePanel.Size = new System.Drawing.Size(352, 606);
+            this.GamePanel.TabIndex = 3;
+            this.GamePanel.UseWaitCursor = true;
+            this.GamePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.GamePanel_Paint);
+            // 
+            // GameBackground
+            // 
+            this.GameBackground.Image = global::Boxy.Properties.Resources.setsizewarehouse;
+            this.GameBackground.Location = new System.Drawing.Point(0, 0);
+            this.GameBackground.Name = "GameBackground";
+            this.GameBackground.Size = new System.Drawing.Size(352, 609);
+            this.GameBackground.TabIndex = 0;
+            this.GameBackground.TabStop = false;
+            this.GameBackground.UseWaitCursor = true;
             // 
             // MenuBackground
             // 
