@@ -20,9 +20,10 @@ namespace BoxGame
 
         // Global Varibles
         int tickCounter = 1;
+        int sameGenCounter = 0;
 
         // Box Related Globals
-        Boolean activeBox = false;
+        Boolean play = true;
 
         int currentXPos = 0;
         int currentYPos = 0;
@@ -59,7 +60,7 @@ namespace BoxGame
                     btn[x, y].BackgroundImageLayout = ImageLayout.Stretch;
                     btn[x, y].Tag = "empty";
                     btn[x, y].Name = "X: " + x + " " + "Y: " + y;
-
+                    
                     // Add the button to the form
                     Controls.Add(btn[x, y]);
                 }
@@ -68,13 +69,14 @@ namespace BoxGame
 
         private void GameForm_Load(object sender, EventArgs e)
         {
-            for(int x = 0; x <gameBoardWidth; x++)
+            for (int x = 0; x < gameBoardWidth; x++)
             {
-                for(int y = 0; y < 2; y++)
+                for (int y = 0; y < 2; y++)
                 {
                     btn[x, y].BackgroundImage = BoxGame.Properties.Resources.emptyempty;
                 }
             }
+
             btn[currentBeltXPos, 0].BackgroundImage = BoxGame.Properties.Resources.startbelt;
             btn[currentBeltXPos, 1].BackgroundImage = BoxGame.Properties.Resources.emptybelt_;
 
@@ -91,13 +93,9 @@ namespace BoxGame
             userX = int.Parse(ButtonToIndex.Name.Split()[1]);
             userY = int.Parse(ButtonToIndex.Name.Split()[3]);
 
-            CreateBelt();
+            PrimaryTimer.Start();
 
-            if (PrimaryTimer.Enabled != true)
-            {
-                tickCounter = 0;
-                PrimaryTimer.Start();
-            }
+            CreateBelt();
         }
 
         private void PrimaryTimer_Tick(object sender, EventArgs e)
@@ -109,47 +107,53 @@ namespace BoxGame
             if (tickCounter < 2)
             {
                 SpawnBox();
+                GenerateNextBox();
             }
 
             // This is not the first tick so we treat it like an already spawned game object
             else
             {
+                CreateBelt();
+
                 // If the box is going to stay in the array bounds we can move it
                 if (currentYPos != (gameBoardHeight - 1))
                 {
-                    // Before we can move the box down we need to check the lower box
-                    int belowBox = currentYPos;
-                    belowBox += 1;
-
-                    // We shall store the lower box type in this string
-                    string lowerBoxType = (string)btn[currentXPos, belowBox].Tag;
-
-                    // Before we move the box lets check its local area for things that might stop it
-                    if (lowerBoxType == "prime" || lowerBoxType == "ups" || lowerBoxType == "fedex")
-                    {
-                        PrimaryTimer.Stop();
-                    }
-                    else
-                    {
-                        MoveBoxDown();
-                    }
+                    CheckPos();
                 }
 
                 // We need to stop now or we will leave the array bounds
                 else
                 {
-                    PrimaryTimer.Stop();
+                    tickCounter = 0;
                 }
             }
         }
 
         private void GenerateNextBox()
         {
-            // Use the random class to create random numbers
-            Random rnd = new Random();
+            // Store the last box type
+            int oldBoxType = currentBoxType;
 
-            // Choose Box Type
+            // Generate random box type
+            Random rnd = new Random();
             nextBoxType = rnd.Next(1, 4);
+
+            if (nextBoxType == oldBoxType)
+            {
+                sameGenCounter++;
+            }
+
+            while(sameGenCounter >= 3 && nextBoxType == oldBoxType)
+            {
+                nextBoxType = rnd.Next(1, 4);
+
+                if(nextBoxType != oldBoxType)
+                {
+                    sameGenCounter = 0;
+                }
+            }
+
+            
         }
 
         private void SpawnBox()
@@ -210,9 +214,6 @@ namespace BoxGame
                 btn[currentBeltXPos, 0].BackgroundImage = BoxGame.Properties.Resources.startbelt;
                 btn[currentBeltXPos, 1].BackgroundImage = BoxGame.Properties.Resources.fedonbelt;
             }
-
-            // Create And Move The Starting Belt
-            GenerateNextBox();
         }
 
         private void MoveBoxDown()
@@ -246,6 +247,88 @@ namespace BoxGame
                 // Spawn a new box (Change the image of an existing button)
                 btn[currentXPos, currentYPos].BackgroundImage = BoxGame.Properties.Resources.fedexbox;
                 btn[currentXPos, currentYPos].Tag = "fedex";
+            }
+        }
+
+        private void CheckPos()
+        {
+            // Before we can move the box down we need to check the lower box
+            int belowBox = currentYPos;
+            belowBox += 1;
+
+            // We shall store the lower box type in this string
+            string lowerBoxType = (string)btn[currentXPos, belowBox].Tag;
+
+            // Before we move the box lets check its local area for things that might stop it
+            if (lowerBoxType == "prime" || lowerBoxType == "ups" || lowerBoxType == "fedex")
+            {
+                CheckVertical();
+                tickCounter = 0;
+            }
+            else
+            {
+                MoveBoxDown();
+            }
+        }
+
+        private void CheckVertical()
+        {
+            int comboCount = 0;
+
+            Console.WriteLine("Check performed");
+
+            // Check box below current box
+            int boxChecker = currentYPos;
+
+            for(int x = 1; x == 3; x++)
+            {
+                boxChecker = +1;
+                Console.WriteLine("Loop Run");
+                Console.WriteLine(currentBoxType);
+                // Store that box type
+                string boxType = (string)btn[currentXPos, boxChecker].Tag;
+
+                if (boxType == "prime" && currentBoxType == 1)
+                {
+                    Console.WriteLine("Match Prime");
+                    comboCount += 1;
+                }
+                if (boxType == "ups" && currentBoxType == 2)
+                {
+                    Console.WriteLine("Match Ups");
+                    comboCount += 1;
+                }
+                if (boxType == "fedex" && currentBoxType == 3)
+                {
+                    Console.WriteLine("Match Fedexs");
+                    comboCount += 1;
+                }
+            }
+
+            if(comboCount == 2)
+            {
+                Console.WriteLine("Combo");
+            }
+        }
+
+        private void CheckHorizontal()
+        {
+
+        }
+
+        private void HoldMyBeer()
+        {
+            // Before we can move the box down we need to check the lower box
+            int belowBox = currentYPos;
+            belowBox += 1;
+
+            // We shall store the lower box type in this string
+            string lowerBoxType = (string)btn[currentXPos, belowBox].Tag;
+
+            // Before we move the box lets check its local area for things that might stop it
+            if (lowerBoxType == "prime" || lowerBoxType == "ups" || lowerBoxType == "fedex")
+            {
+                tickCounter = 0;
             }
         }
     }

@@ -34,14 +34,15 @@
             // 
             // PrimaryTimer
             // 
-            this.PrimaryTimer.Interval = 250;
+            this.PrimaryTimer.Interval = 200;
             this.PrimaryTimer.Tick += new System.EventHandler(this.PrimaryTimer_Tick);
             // 
             // GameForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(1045, 690);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GameForm";
             this.Text = "Boxy The Game";
             this.Load += new System.EventHandler(this.GameForm_Load);
