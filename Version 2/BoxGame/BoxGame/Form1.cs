@@ -303,59 +303,134 @@ namespace BoxGame
         private void CheckVertical()
         {
             // Total number of matches so far
-            int matchCount = 0;
+            int upMatchCount = 0;
+            int downMatchCount = 0;
 
-            // Check box below current box
-            int boxChecker = currentYPos;
+            // Scan control
+            Boolean scanUp = true;
+            Boolean scanDown = true;
 
-            for (int x = 0; x < 3; x++)
+            // Get the current xpos
+            int boxChecker;
+            boxChecker = currentYPos;
+
+            Console.WriteLine("I am starting at box");
+            Console.WriteLine(boxChecker);
+
+            while (scanUp && boxChecker != 0)
             {
-                boxChecker += 1;
+                Console.WriteLine("I am scanning up");
 
-                if(boxChecker < gameBoardHeight)
+                // First box to the left
+                boxChecker -= 1;
+
+                Console.WriteLine("I am checking the box =");
+                Console.WriteLine(boxChecker);
+
+                // Is the box to the left the same as this the current box?
+                string boxType = (string)btn[currentXPos, boxChecker].Tag;
+
+                // If so, then add one to the combo
+                if (boxType == "prime" && currentBoxType == 1)
                 {
-                    string boxType = (string)btn[currentXPos, boxChecker].Tag;
-
-                    if (boxType == "prime" && currentBoxType == 1)
-                    {
-                        matchCount += 1;
-                    }
-                    if (boxType == "ups" && currentBoxType == 2)
-                    {
-                        matchCount += 1;
-                    }
-                    if (boxType == "fedex" && currentBoxType == 3)
-                    {
-                        matchCount += 1;
-                    }
+                    Console.WriteLine("I have a prime match");
+                    upMatchCount += 1;
+                }
+                else if (boxType == "ups" && currentBoxType == 2)
+                {
+                    Console.WriteLine("I have a ups match");
+                    upMatchCount += 1;
+                }
+                else if (boxType == "fedex" && currentBoxType == 3)
+                {
+                    Console.WriteLine("I have a fedex match");
+                    upMatchCount += 1;
                 }
 
-                if(x == 2 && matchCount == 1)
+                // Not the same box so we stop scanning left here
+                else if (boxType != "prime" || boxType != "ups" || boxType != "fedex")
                 {
-                    matchCount = 0;
+                    Console.WriteLine("No More Matches Found, up Matches Are =");
+                    Console.WriteLine(upMatchCount);
+                    scanUp = false;
                 }
             }
 
-            //Console.WriteLine(matchCount);
+            // Reset boxChecker back to center
+            boxChecker = currentYPos;
+            
+            Console.WriteLine("I am starting at box");
+            Console.WriteLine(boxChecker);
 
-            // If the user gets combo
-            if (matchCount == comboSize)
+            while (scanDown && (boxChecker != gameBoardHeight - 1))
             {
-                matchCount = 0;
+                Console.WriteLine("I am scanning down");
 
-                // Check box below current box
-                boxChecker = currentYPos;
-                boxChecker -= 1;
+                // First box to the right
+                boxChecker += 1;
 
-                for (int x = 0; x < 3; x++)
+                Console.WriteLine("I am checking the box =");
+                Console.WriteLine(boxChecker);
+
+                // Is the box to the right the same as this the current box?
+                string boxType = (string)btn[currentXPos, boxChecker].Tag;
+
+                // If so, then add one to the combo
+                if (boxType == "prime" && currentBoxType == 1)
                 {
+                    Console.WriteLine("I have a prime match");
+                    downMatchCount += 1;
+                }
+                else if (boxType == "ups" && currentBoxType == 2)
+                {
+                    Console.WriteLine("I have a ups match");
+                    downMatchCount += 1;
+                }
+                else if (boxType == "fedex" && currentBoxType == 3)
+                {
+                    Console.WriteLine("I have a fedex match");
+                    downMatchCount += 1;
+                }
+
+                // Not the same box so we stop scanning right here
+                else if (boxType != "prime" || boxType != "ups" || boxType != "fedex")
+                {
+                    Console.WriteLine("No More Matches Found, Down Matches Are =");
+                    Console.WriteLine(downMatchCount);
+                    scanDown = false;
+                }
+            }
+
+            Console.WriteLine("Total Matches Are =");
+            Console.WriteLine(downMatchCount + upMatchCount);
+            Console.WriteLine("---------------------------------------------");
+
+
+            // If we got at least one match on each side we know thats a combo
+            if (upMatchCount >= 1 && downMatchCount >= 1 || upMatchCount >= 2 || downMatchCount >= 2)
+            {
+                boxChecker = currentYPos;
+
+                Console.WriteLine("WE GOTTA COMBOOOO =");
+
+                // Move left by total match count minus one due to addition in loop
+
+                boxChecker = boxChecker - upMatchCount - 1;
+
+                Console.WriteLine("We are going to loop for a total of = ");
+                Console.WriteLine(upMatchCount + downMatchCount + 1);
+
+                for (int x = 0; x <= (upMatchCount + downMatchCount); x++)
+                {
+                    Console.WriteLine("BoxChecker = ");
+                    Console.WriteLine(boxChecker);
+
                     boxChecker += 1;
 
-                    if (boxChecker < gameBoardHeight)
-                    {
-                        btn[currentXPos, boxChecker].BackgroundImage = BoxGame.Properties.Resources.emptyslot;
-                        btn[currentXPos, boxChecker].Tag = "empty";
-                    }
+                    // Go to each left image and replace with empty
+                    btn[currentXPos, boxChecker].BackgroundImage = BoxGame.Properties.Resources.emptyempty;
+                    btn[currentXPos, boxChecker].Tag = "empty";
+
                 }
             }
         }
