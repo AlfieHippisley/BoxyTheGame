@@ -374,10 +374,18 @@ namespace BoxGame
             int boxChecker;
             boxChecker = currentXPos;
 
+            Console.WriteLine("I am starting at box");
+            Console.WriteLine(boxChecker);
+
             while (scanLeft && boxChecker != 0)
             {
+                Console.WriteLine("I am scanning left");
+
                 // First box to the left
                 boxChecker -= 1;
+
+                Console.WriteLine("I am checking the box =");
+                Console.WriteLine(boxChecker);
 
                 // Is the box to the left the same as this the current box?
                 string boxType = (string)btn[boxChecker, currentYPos].Tag;
@@ -385,21 +393,24 @@ namespace BoxGame
                 // If so, then add one to the combo
                 if (boxType == "prime" && currentBoxType == 1)
                 {
+                    Console.WriteLine("I have a prime match");
                     leftMatchCount += 1;
                 }
-                if (boxType == "ups" && currentBoxType == 2)
+                else if (boxType == "ups" && currentBoxType == 2)
                 {
+                    Console.WriteLine("I have a ups match");
                     leftMatchCount += 1;
                 }
-                if (boxType == "fedex" && currentBoxType == 3)
+                else if (boxType == "fedex" && currentBoxType == 3)
                 {
+                    Console.WriteLine("I have a fedex match");
                     leftMatchCount += 1;
                 }
 
                 // Not the same box so we stop scanning left here
-                if (boxType == "empty")
+                else if (boxType != "prime" || boxType != "ups" || boxType != "fedex")
                 {
-                    Console.WriteLine("Left Matches Are =");
+                    Console.WriteLine("No More Matches Found, Left Matches Are =");
                     Console.WriteLine(leftMatchCount);
                     scanLeft = false;
                 }
@@ -408,10 +419,18 @@ namespace BoxGame
             // Reset boxChecker back to center
             boxChecker = currentXPos;
 
+            Console.WriteLine("I am starting at box");
+            Console.WriteLine(boxChecker);
+
             while (scanRight && (boxChecker != gameBoardWidth - 1))
             {
+                Console.WriteLine("I am scanning right");
+
                 // First box to the right
                 boxChecker += 1;
+
+                Console.WriteLine("I am checking the box =");
+                Console.WriteLine(boxChecker);
 
                 // Is the box to the right the same as this the current box?
                 string boxType = (string)btn[boxChecker, currentYPos].Tag;
@@ -419,21 +438,24 @@ namespace BoxGame
                 // If so, then add one to the combo
                 if (boxType == "prime" && currentBoxType == 1)
                 {
+                    Console.WriteLine("I have a prime match");
                     rightMatchCount += 1;
                 }
-                if (boxType == "ups" && currentBoxType == 2)
+                else if (boxType == "ups" && currentBoxType == 2)
                 {
+                    Console.WriteLine("I have a ups match");
                     rightMatchCount += 1;
                 }
-                if (boxType == "fedex" && currentBoxType == 3)
+                else if(boxType == "fedex" && currentBoxType == 3)
                 {
+                    Console.WriteLine("I have a fedex match");
                     rightMatchCount += 1;
                 }
 
                 // Not the same box so we stop scanning right here
-                if (boxType == "empty")
+                else if (boxType != "prime" || boxType != "ups" || boxType != "fedex")
                 {
-                    Console.WriteLine("Right Matches Are =");
+                    Console.WriteLine("No More Matches Found, Right Matches Are =");
                     Console.WriteLine(rightMatchCount);
                     scanRight = false;
                 }
@@ -441,10 +463,11 @@ namespace BoxGame
 
             Console.WriteLine("Total Matches Are =");
             Console.WriteLine(rightMatchCount + leftMatchCount);
+            Console.WriteLine("---------------------------------------------");
 
 
             // If we got at least one match on each side we know thats a combo
-            if (leftMatchCount + rightMatchCount >= 2 )
+            if (leftMatchCount >= 1 && rightMatchCount >= 1 || leftMatchCount >= 2 || rightMatchCount >= 2)
             {
                 boxChecker = currentXPos;
 
