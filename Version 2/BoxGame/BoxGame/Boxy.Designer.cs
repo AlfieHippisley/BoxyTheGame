@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.PrimaryTimer = new System.Windows.Forms.Timer(this.components);
-            this.MainMenuPanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // PrimaryTimer
@@ -38,19 +37,11 @@
             this.PrimaryTimer.Interval = 200;
             this.PrimaryTimer.Tick += new System.EventHandler(this.PrimaryTimer_Tick);
             // 
-            // MainMenuPanel
-            // 
-            this.MainMenuPanel.Location = new System.Drawing.Point(0, 0);
-            this.MainMenuPanel.Name = "MainMenuPanel";
-            this.MainMenuPanel.Size = new System.Drawing.Size(440, 694);
-            this.MainMenuPanel.TabIndex = 0;
-            // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1045, 690);
-            this.Controls.Add(this.MainMenuPanel);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GameForm";
             this.Text = "Boxy The Game";
@@ -62,7 +53,6 @@
         #endregion
 
         private System.Windows.Forms.Timer PrimaryTimer;
-        private System.Windows.Forms.Panel MainMenuPanel;
     }
 }
 
