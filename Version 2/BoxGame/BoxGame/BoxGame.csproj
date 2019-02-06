@@ -59,18 +59,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -82,24 +82,29 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="primebox.png" />
+    <None Include="Resources\scorebar.png" />
     <None Include="Resources\yesbuttonwhite.png" />
-    <None Include="Resources\setsizewarehouse.png" />
-    <None Include="Resources\quitbutton.png" />
-    <None Include="Resources\playbutton.png" />
-    <None Include="Resources\learnbutton.png" />
-    <None Include="Resources\exitbox.png" />
-    <None Include="Resources\cancelbuttonwhite.png" />
+    <None Include="Resources\quitbuttonwhite.png" />
     <None Include="Resources\mainmenubackground.png" />
-    <None Include="Resources\emptyempty.png" />
-    <None Include="Resources\emptybelt#.png" />
-    <None Include="Resources\fedonbelt.png" />
+    <None Include="Resources\exitbox1.png" />
+    <None Include="Resources\beltstart.png" />
     <None Include="Resources\upsonbelt.png" />
     <None Include="Resources\primeonbelt.png" />
-    <None Include="Resources\startbelt.png" />
-    <None Include="Resources\fedexbox.png" />
-    <None Include="Resources\upsbox.png" />
+    <None Include="Resources\fedexonbelt.png" />
+    <None Include="Resources\EMPTYbelt.png" />
+    <None Include="Resources\beltarea.png" />
     <None Include="Resources\emptyslot.png" />
+    <None Include="Resources\upsbox.png" />
+    <None Include="Resources\quitbutton.png" />
     <None Include="Resources\primebox.png" />
+    <None Include="Resources\playbutton.png" />
+    <None Include="Resources\learnmenubackground.png" />
+    <None Include="Resources\learnbutton.png" />
+    <None Include="Resources\fedexbox.png" />
+    <None Include="Resources\exitbox.png" />
+    <None Include="Resources\cancelbuttonwhite.png" />
+    <None Include="Resources\belt.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

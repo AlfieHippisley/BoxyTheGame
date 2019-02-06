@@ -63,6 +63,26 @@ namespace BoxGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap beltarea {
+            get {
+                object obj = ResourceManager.GetObject("beltarea", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap beltstart {
+            get {
+                object obj = ResourceManager.GetObject("beltstart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cancelbuttonwhite {
             get {
                 object obj = ResourceManager.GetObject("cancelbuttonwhite", resourceCulture);
@@ -73,19 +93,9 @@ namespace BoxGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap emptybelt_ {
+        internal static System.Drawing.Bitmap EMPTYbelt {
             get {
-                object obj = ResourceManager.GetObject("emptybelt#", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap emptyempty {
-            get {
-                object obj = ResourceManager.GetObject("emptyempty", resourceCulture);
+                object obj = ResourceManager.GetObject("EMPTYbelt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,6 +123,16 @@ namespace BoxGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exitbox1 {
+            get {
+                object obj = ResourceManager.GetObject("exitbox1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fedexbox {
             get {
                 object obj = ResourceManager.GetObject("fedexbox", resourceCulture);
@@ -123,19 +143,9 @@ namespace BoxGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap fedexbox1 {
+        internal static System.Drawing.Bitmap fedexonbelt {
             get {
-                object obj = ResourceManager.GetObject("fedexbox1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap fedonbelt {
-            get {
-                object obj = ResourceManager.GetObject("fedonbelt", resourceCulture);
+                object obj = ResourceManager.GetObject("fedexonbelt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,6 +156,16 @@ namespace BoxGame.Properties {
         internal static System.Drawing.Bitmap learnbutton {
             get {
                 object obj = ResourceManager.GetObject("learnbutton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap learnmenubackground {
+            get {
+                object obj = ResourceManager.GetObject("learnmenubackground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,9 +223,9 @@ namespace BoxGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap setsizewarehouse {
+        internal static System.Drawing.Bitmap quitbuttonwhite {
             get {
-                object obj = ResourceManager.GetObject("setsizewarehouse", resourceCulture);
+                object obj = ResourceManager.GetObject("quitbuttonwhite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,9 +233,9 @@ namespace BoxGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap startbelt {
+        internal static System.Drawing.Bitmap scorebar {
             get {
-                object obj = ResourceManager.GetObject("startbelt", resourceCulture);
+                object obj = ResourceManager.GetObject("scorebar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

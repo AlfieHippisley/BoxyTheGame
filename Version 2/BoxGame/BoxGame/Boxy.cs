@@ -75,13 +75,13 @@ namespace BoxGame
             {
                 for (int y = 0; y < 2; y++)
                 {
-                    btn[x, y].BackgroundImage = BoxGame.Properties.Resources.emptyempty;
+                    btn[x, y].BackgroundImage = BoxGame.Properties.Resources.beltarea;
                 }
             }
 
             // We then place the belt
-            btn[currentBeltXPos, 0].BackgroundImage = BoxGame.Properties.Resources.startbelt;
-            btn[currentBeltXPos, 1].BackgroundImage = BoxGame.Properties.Resources.emptybelt_;
+            btn[currentBeltXPos, 0].BackgroundImage = BoxGame.Properties.Resources.beltstart;
+            btn[currentBeltXPos, 1].BackgroundImage = BoxGame.Properties.Resources.EMPTYbelt;
 
             // And we generate the type of the first box to be spawned
             GenerateNextBox();
@@ -194,27 +194,27 @@ namespace BoxGame
 
         private void CreateBelt()
         {
-            btn[currentBeltXPos, 1].BackgroundImage = BoxGame.Properties.Resources.emptyempty;
-            btn[currentBeltXPos, 0].BackgroundImage = BoxGame.Properties.Resources.emptyempty;
+            btn[currentBeltXPos, 0].BackgroundImage = BoxGame.Properties.Resources.beltarea;
+            btn[currentBeltXPos, 1].BackgroundImage = BoxGame.Properties.Resources.beltarea;
 
             currentBeltXPos = userX;
 
             if (nextBoxType == 1)
             {
-                btn[currentBeltXPos, 0].BackgroundImage = BoxGame.Properties.Resources.startbelt;
+                btn[currentBeltXPos, 0].BackgroundImage = BoxGame.Properties.Resources.beltstart;
                 btn[currentBeltXPos, 1].BackgroundImage = BoxGame.Properties.Resources.primeonbelt;
             }
 
             if (nextBoxType == 2)
             {
-                btn[currentBeltXPos, 0].BackgroundImage = BoxGame.Properties.Resources.startbelt;
+                btn[currentBeltXPos, 0].BackgroundImage = BoxGame.Properties.Resources.beltstart;
                 btn[currentBeltXPos, 1].BackgroundImage = BoxGame.Properties.Resources.upsonbelt;
             }
 
             if (nextBoxType == 3)
             {
-                btn[currentBeltXPos, 0].BackgroundImage = BoxGame.Properties.Resources.startbelt;
-                btn[currentBeltXPos, 1].BackgroundImage = BoxGame.Properties.Resources.fedonbelt;
+                btn[currentBeltXPos, 0].BackgroundImage = BoxGame.Properties.Resources.beltstart;
+                btn[currentBeltXPos, 1].BackgroundImage = BoxGame.Properties.Resources.fedexonbelt;
             }
         }
 
@@ -428,7 +428,7 @@ namespace BoxGame
                     boxChecker += 1;
 
                     // Go to each left image and replace with empty
-                    btn[currentXPos, boxChecker].BackgroundImage = BoxGame.Properties.Resources.emptyempty;
+                    btn[currentXPos, boxChecker].BackgroundImage = BoxGame.Properties.Resources.emptyslot;
                     btn[currentXPos, boxChecker].Tag = "empty";
 
                 }
@@ -563,7 +563,7 @@ namespace BoxGame
                     boxChecker += 1;
 
                     // Go to each left image and replace with empty
-                    btn[boxChecker, currentYPos].BackgroundImage = BoxGame.Properties.Resources.emptyempty;
+                    btn[boxChecker, currentYPos].BackgroundImage = BoxGame.Properties.Resources.emptyslot;
                     btn[boxChecker, currentYPos].Tag = "empty";
 
                 }
