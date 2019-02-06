@@ -587,5 +587,35 @@ namespace BoxGame
                 }
             }
         }
+
+        private void MainMenuPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void PlayBtn_Click(object sender, EventArgs e)
+        {
+            MainMenuPanel.Visible = false;
+        }
+
+        private void LearnBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void QuitBtn_Click(object sender, EventArgs e)
+        {
+            ExitConfirmation.Visible = true;
+        }
+
+        private void YesBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void CancelBtn_Click(object sender, EventArgs e)
+        {
+            ExitConfirmation.Visible = false;
+        }
     }
 }
