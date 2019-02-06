@@ -98,9 +98,6 @@ namespace BoxGame
             userX = int.Parse(ButtonToIndex.Name.Split()[1]);
             userY = int.Parse(ButtonToIndex.Name.Split()[3]);
 
-            // Currently, when the user clicks the game starts (This might change)(This timer controls the flow and speed of boxes)
-            PrimaryTimer.Start();
-
             // On every click we need to refresh the belts location in the grid because the user might have moved it
             CreateBelt();
         }
@@ -578,6 +575,7 @@ namespace BoxGame
         private void PlayBtn_Click(object sender, EventArgs e)
         {
             MainMenuPanel.Visible = false;
+            PrimaryTimer.Start();
         }
 
         private void LearnBtn_Click(object sender, EventArgs e)
