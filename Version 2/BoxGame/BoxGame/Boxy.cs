@@ -582,7 +582,7 @@ namespace BoxGame
 
         private void LearnBtn_Click(object sender, EventArgs e)
         {
-
+            LearnPnl.Visible = true;
         }
 
         private void QuitBtn_Click(object sender, EventArgs e)
