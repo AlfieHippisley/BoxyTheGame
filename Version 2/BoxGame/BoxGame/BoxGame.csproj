@@ -82,14 +82,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="primebox.png" />
-    <None Include="Resources\yesbuttonwhite.png" />
-    <None Include="Resources\setsizewarehouse.png" />
-    <None Include="Resources\quitbutton.png" />
-    <None Include="Resources\playbutton.png" />
-    <None Include="Resources\learnbutton.png" />
-    <None Include="Resources\exitbox.png" />
-    <None Include="Resources\cancelbuttonwhite.png" />
-    <None Include="Resources\mainmenubackground.png" />
     <None Include="Resources\emptyempty.png" />
     <None Include="Resources\emptybelt#.png" />
     <None Include="Resources\fedonbelt.png" />

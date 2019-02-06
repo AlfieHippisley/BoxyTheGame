@@ -63,16 +63,6 @@ namespace BoxGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cancelbuttonwhite {
-            get {
-                object obj = ResourceManager.GetObject("cancelbuttonwhite", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap emptybelt_ {
             get {
                 object obj = ResourceManager.GetObject("emptybelt#", resourceCulture);
@@ -96,16 +86,6 @@ namespace BoxGame.Properties {
         internal static System.Drawing.Bitmap emptyslot {
             get {
                 object obj = ResourceManager.GetObject("emptyslot", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap exitbox {
-            get {
-                object obj = ResourceManager.GetObject("exitbox", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,36 +123,6 @@ namespace BoxGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap learnbutton {
-            get {
-                object obj = ResourceManager.GetObject("learnbutton", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap mainmenubackground {
-            get {
-                object obj = ResourceManager.GetObject("mainmenubackground", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap playbutton {
-            get {
-                object obj = ResourceManager.GetObject("playbutton", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap primebox {
             get {
                 object obj = ResourceManager.GetObject("primebox", resourceCulture);
@@ -186,26 +136,6 @@ namespace BoxGame.Properties {
         internal static System.Drawing.Bitmap primeonbelt {
             get {
                 object obj = ResourceManager.GetObject("primeonbelt", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap quitbutton {
-            get {
-                object obj = ResourceManager.GetObject("quitbutton", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap setsizewarehouse {
-            get {
-                object obj = ResourceManager.GetObject("setsizewarehouse", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -236,16 +166,6 @@ namespace BoxGame.Properties {
         internal static System.Drawing.Bitmap upsonbelt {
             get {
                 object obj = ResourceManager.GetObject("upsonbelt", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap yesbuttonwhite {
-            get {
-                object obj = ResourceManager.GetObject("yesbuttonwhite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

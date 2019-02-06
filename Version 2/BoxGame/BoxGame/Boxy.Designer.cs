@@ -46,8 +46,6 @@
             this.Name = "GameForm";
             this.Text = "Boxy The Game";
             this.Load += new System.EventHandler(this.GameForm_Load);
-            this.MainMenuPanel.ResumeLayout(false);
-            this.ExitConfirmation.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
