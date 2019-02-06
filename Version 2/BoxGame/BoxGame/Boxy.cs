@@ -609,5 +609,10 @@ namespace BoxGame
         {
             Application.Restart();
         }
+
+        private void BackBtn_Click(object sender, EventArgs e)
+        {
+            LearnPnl.Visible = false;
+        }
     }
 }

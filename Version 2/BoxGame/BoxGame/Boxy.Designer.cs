@@ -40,6 +40,8 @@
             this.QuitBtn = new System.Windows.Forms.Button();
             this.LearnBtn = new System.Windows.Forms.Button();
             this.PlayBtn = new System.Windows.Forms.Button();
+            this.BackBtn = new System.Windows.Forms.Button();
+            this.LearnPnl.SuspendLayout();
             this.MainMenuPanel.SuspendLayout();
             this.ExitConfirmation.SuspendLayout();
             this.SuspendLayout();
@@ -53,6 +55,7 @@
             // 
             this.LearnPnl.BackgroundImage = global::BoxGame.Properties.Resources.LearnPic;
             this.LearnPnl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LearnPnl.Controls.Add(this.BackBtn);
             this.LearnPnl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LearnPnl.Location = new System.Drawing.Point(0, 0);
             this.LearnPnl.Name = "LearnPnl";
@@ -159,6 +162,17 @@
             this.PlayBtn.UseVisualStyleBackColor = true;
             this.PlayBtn.Click += new System.EventHandler(this.PlayBtn_Click);
             // 
+            // BackBtn
+            // 
+            this.BackBtn.BackgroundImage = global::BoxGame.Properties.Resources.BackBtn;
+            this.BackBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackBtn.Location = new System.Drawing.Point(494, 56);
+            this.BackBtn.Name = "BackBtn";
+            this.BackBtn.Size = new System.Drawing.Size(152, 76);
+            this.BackBtn.TabIndex = 0;
+            this.BackBtn.UseVisualStyleBackColor = true;
+            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
+            // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -171,6 +185,7 @@
             this.Name = "GameForm";
             this.Text = "Boxy The Game";
             this.Load += new System.EventHandler(this.GameForm_Load);
+            this.LearnPnl.ResumeLayout(false);
             this.MainMenuPanel.ResumeLayout(false);
             this.ExitConfirmation.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -189,6 +204,7 @@
         private System.Windows.Forms.Button YesBtn;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel LearnPnl;
+        private System.Windows.Forms.Button BackBtn;
     }
 }
 
