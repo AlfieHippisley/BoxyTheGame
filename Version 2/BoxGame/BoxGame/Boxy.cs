@@ -599,5 +599,15 @@ namespace BoxGame
         {
             ExitConfirmation.Visible = false;
         }
+
+        private void MainMenuBtn_Click(object sender, EventArgs e)
+        {
+            MainMenuPanel.Visible = true;
+        }
+
+        private void RetryBtn_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
     }
 }

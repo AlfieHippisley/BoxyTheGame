@@ -37,8 +37,14 @@
             this.ExitConfirmation = new System.Windows.Forms.Panel();
             this.CancelBtn = new System.Windows.Forms.Button();
             this.YesBtn = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.YourScoreLable = new System.Windows.Forms.Label();
+            this.ScoreTxtBox = new System.Windows.Forms.TextBox();
+            this.MainMenuBtn = new System.Windows.Forms.Button();
+            this.RetryBtn = new System.Windows.Forms.Button();
             this.MainMenuPanel.SuspendLayout();
             this.ExitConfirmation.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // PrimaryTimer
@@ -133,11 +139,60 @@
             this.YesBtn.UseVisualStyleBackColor = true;
             this.YesBtn.Click += new System.EventHandler(this.YesBtn_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.RetryBtn);
+            this.panel1.Controls.Add(this.MainMenuBtn);
+            this.panel1.Controls.Add(this.ScoreTxtBox);
+            this.panel1.Controls.Add(this.YourScoreLable);
+            this.panel1.Location = new System.Drawing.Point(0, 716);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(767, 88);
+            this.panel1.TabIndex = 10;
+            // 
+            // YourScoreLable
+            // 
+            this.YourScoreLable.AutoSize = true;
+            this.YourScoreLable.Font = new System.Drawing.Font("Cambria Math", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.YourScoreLable.Location = new System.Drawing.Point(3, 4);
+            this.YourScoreLable.Name = "YourScoreLable";
+            this.YourScoreLable.Size = new System.Drawing.Size(113, 84);
+            this.YourScoreLable.TabIndex = 0;
+            this.YourScoreLable.Text = "Your Score";
+            // 
+            // ScoreTxtBox
+            // 
+            this.ScoreTxtBox.Location = new System.Drawing.Point(148, 35);
+            this.ScoreTxtBox.Name = "ScoreTxtBox";
+            this.ScoreTxtBox.Size = new System.Drawing.Size(120, 22);
+            this.ScoreTxtBox.TabIndex = 1;
+            // 
+            // MainMenuBtn
+            // 
+            this.MainMenuBtn.Location = new System.Drawing.Point(375, 28);
+            this.MainMenuBtn.Name = "MainMenuBtn";
+            this.MainMenuBtn.Size = new System.Drawing.Size(112, 36);
+            this.MainMenuBtn.TabIndex = 2;
+            this.MainMenuBtn.Text = "MainMenu";
+            this.MainMenuBtn.UseVisualStyleBackColor = true;
+            this.MainMenuBtn.Click += new System.EventHandler(this.MainMenuBtn_Click);
+            // 
+            // RetryBtn
+            // 
+            this.RetryBtn.Location = new System.Drawing.Point(578, 28);
+            this.RetryBtn.Name = "RetryBtn";
+            this.RetryBtn.Size = new System.Drawing.Size(98, 36);
+            this.RetryBtn.TabIndex = 3;
+            this.RetryBtn.Text = "Retry";
+            this.RetryBtn.UseVisualStyleBackColor = true;
+            this.RetryBtn.Click += new System.EventHandler(this.RetryBtn_Click);
+            // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 703);
+            this.ClientSize = new System.Drawing.Size(767, 803);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.ExitConfirmation);
             this.Controls.Add(this.MainMenuPanel);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -146,6 +201,8 @@
             this.Load += new System.EventHandler(this.GameForm_Load);
             this.MainMenuPanel.ResumeLayout(false);
             this.ExitConfirmation.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -160,6 +217,11 @@
         private System.Windows.Forms.Panel ExitConfirmation;
         private System.Windows.Forms.Button CancelBtn;
         private System.Windows.Forms.Button YesBtn;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label YourScoreLable;
+        private System.Windows.Forms.Button MainMenuBtn;
+        private System.Windows.Forms.TextBox ScoreTxtBox;
+        private System.Windows.Forms.Button RetryBtn;
     }
 }
 
