@@ -22,8 +22,6 @@ namespace BoxGame
         // General Global Varibles
         int tickCounter = 1;
         int sameGenCounter = 0;
-        int score = 0;
-        Boolean lostGame = false;
 
         // Box Related Globals
         int currentXPos = 0;
@@ -45,25 +43,25 @@ namespace BoxGame
         {
             InitializeComponent();
 
-            // We Loop for both the x-axis and the y-axis
+            // Some of this code is from the lab 2 sheet
             for (int x = 0; x < btn.GetLength(0) ; x++)
             {
                 for (int y = 0; y < btn.GetLength(0); y++)
                 {
-                    // For each location in the array we place a button
+                    // Create button in array posistion [x,y]
                     btn[x, y] = new Button();
 
-                    // We can set the size of the button and the link for the event handler
+                    // Set the size of the button and the link the event handler
                     btn[x, y].SetBounds(57 * x, 57 * y, 60, 60);
                     btn[x, y].Click += new EventHandler(this.btnEvent_Click);
 
-                    // We want the grid to look empty so we give it a empty slot image
+                    // Set the image background of the button
                     btn[x, y].BackgroundImage = BoxGame.Properties.Resources.emptyslot;
                     btn[x, y].BackgroundImageLayout = ImageLayout.Stretch;
                     btn[x, y].Tag = "empty";
                     btn[x, y].Name = "X: " + x + " " + "Y: " + y;
                     
-                    // We can now add the button to the form
+                    // Add the button to the form
                     Controls.Add(btn[x, y]);
                 }
             }
@@ -127,9 +125,6 @@ namespace BoxGame
             {
                 ProcessBox();
             }
-
-            Console.WriteLine("The Score Is ;");
-            Console.WriteLine(score);
         }
 
         private void GenerateNextBox()
@@ -165,17 +160,6 @@ namespace BoxGame
 
         private void SpawnBox()
         {
-            // Is the box to the left the same as this the current box?
-            string spawnBox = (string)btn[userX, 3].Tag;
-
-            if (spawnBox == "prime" || spawnBox == "ups" || spawnBox == "fedex")
-            {
-                PrimaryTimer.Stop();
-                lostGame = true;
-                Console.WriteLine("The game has been lost :");
-                Console.WriteLine(lostGame);
-            }
-
             // Box Type 1 - Spawn Prime Box
             if (nextBoxType == 1)
             {
@@ -447,7 +431,6 @@ namespace BoxGame
                     btn[currentXPos, boxChecker].BackgroundImage = BoxGame.Properties.Resources.emptyempty;
                     btn[currentXPos, boxChecker].Tag = "empty";
 
-                    score = 1 + upMatchCount + downMatchCount;
                 }
             }
         }
@@ -583,7 +566,6 @@ namespace BoxGame
                     btn[boxChecker, currentYPos].BackgroundImage = BoxGame.Properties.Resources.emptyempty;
                     btn[boxChecker, currentYPos].Tag = "empty";
 
-                    score = 1 + leftMatchCount + rightMatchCount;
                 }
             }
         }
