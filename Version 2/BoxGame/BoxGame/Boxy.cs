@@ -569,6 +569,5 @@ namespace BoxGame
                 }
             }
         }
-
     }
 }
