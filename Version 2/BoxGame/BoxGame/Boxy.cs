@@ -22,6 +22,9 @@ namespace BoxGame
         // General Global Varibles
         int tickCounter = 1;
         int sameGenCounter = 0;
+        Boolean gameLost = false;
+
+        // Score varibles
         int totalScore = 0;
         int totalDispatches = 0;
         int averageDispatches = 0;
@@ -167,6 +170,14 @@ namespace BoxGame
 
         private void SpawnBox()
         {
+            string spawnBoxType = (string)btn[currentXPos, 2].Tag;
+
+            if (spawnBoxType == "prime" || spawnBoxType == "ups" || spawnBoxType == "fedex")
+            {
+                PrimaryTimer.Stop();
+                gameLost = true;
+            }
+
             // Box Type 1 - Spawn Prime Box
             if (nextBoxType == 1)
             {
@@ -599,6 +610,7 @@ namespace BoxGame
             totalScore = 0;
             totalDispatches = 0;
             averageDispatches = 0;
+            gameLost = false;
             PrimaryTimer.Start();
         }
 
