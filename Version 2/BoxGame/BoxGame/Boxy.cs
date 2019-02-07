@@ -598,16 +598,6 @@ namespace BoxGame
             ExitConfirmation.Visible = false;
         }
 
-        private void MainMenuBtn_Click(object sender, EventArgs e)
-        {
-            MainMenuPanel.Visible = true;
-        }
-
-        private void RetryBtn_Click(object sender, EventArgs e)
-        {
-            Application.Restart();
-        }
-
         private void BackBtn_Click(object sender, EventArgs e)
         {
             LearnPnl.Visible = false;
@@ -615,12 +605,12 @@ namespace BoxGame
 
         private void QuitJobBtn_Click(object sender, EventArgs e)
         {
-
+            MainMenuPanel.Visible = true;
         }
 
         private void StartOverBtn_Click(object sender, EventArgs e)
         {
-
+            Application.Restart();
         }
     }
 }
