@@ -39,6 +39,8 @@
             this.QuitBtn = new System.Windows.Forms.Button();
             this.LearnBtn = new System.Windows.Forms.Button();
             this.PlayBtn = new System.Windows.Forms.Button();
+            this.QuitJobBtn = new System.Windows.Forms.Button();
+            this.StartOverBtn = new System.Windows.Forms.Button();
             this.LearnPnl.SuspendLayout();
             this.MainMenuPanel.SuspendLayout();
             this.ExitConfirmation.SuspendLayout();
@@ -163,6 +165,28 @@
             this.PlayBtn.UseVisualStyleBackColor = true;
             this.PlayBtn.Click += new System.EventHandler(this.PlayBtn_Click);
             // 
+            // QuitJobBtn
+            // 
+            this.QuitJobBtn.BackgroundImage = global::BoxGame.Properties.Resources.QuitJobBtn;
+            this.QuitJobBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.QuitJobBtn.Location = new System.Drawing.Point(733, 404);
+            this.QuitJobBtn.Name = "QuitJobBtn";
+            this.QuitJobBtn.Size = new System.Drawing.Size(100, 50);
+            this.QuitJobBtn.TabIndex = 12;
+            this.QuitJobBtn.UseVisualStyleBackColor = true;
+            this.QuitJobBtn.Click += new System.EventHandler(this.QuitJobBtn_Click);
+            // 
+            // StartOverBtn
+            // 
+            this.StartOverBtn.BackgroundImage = global::BoxGame.Properties.Resources.StartOverBtn;
+            this.StartOverBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.StartOverBtn.Location = new System.Drawing.Point(862, 404);
+            this.StartOverBtn.Name = "StartOverBtn";
+            this.StartOverBtn.Size = new System.Drawing.Size(100, 50);
+            this.StartOverBtn.TabIndex = 13;
+            this.StartOverBtn.UseVisualStyleBackColor = true;
+            this.StartOverBtn.Click += new System.EventHandler(this.StartOverBtn_Click);
+            // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -173,6 +197,8 @@
             this.ClientSize = new System.Drawing.Size(1079, 563);
             this.Controls.Add(this.LearnPnl);
             this.Controls.Add(this.MainMenuPanel);
+            this.Controls.Add(this.QuitJobBtn);
+            this.Controls.Add(this.StartOverBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GameForm";
@@ -186,7 +212,8 @@
         }
 
         #endregion
-
+        private System.Windows.Forms.Button QuitJobBtn;
+        private System.Windows.Forms.Button StartOverBtn;
         private System.Windows.Forms.Timer PrimaryTimer;
         private System.Windows.Forms.Panel MainMenuPanel;
         private System.Windows.Forms.Button QuitBtn;
@@ -197,6 +224,7 @@
         private System.Windows.Forms.Button YesBtn;
         private System.Windows.Forms.Panel LearnPnl;
         private System.Windows.Forms.Button BackBtn;
+
     }
 }
 

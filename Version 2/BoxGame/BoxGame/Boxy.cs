@@ -612,5 +612,15 @@ namespace BoxGame
         {
             LearnPnl.Visible = false;
         }
+
+        private void QuitJobBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StartOverBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
