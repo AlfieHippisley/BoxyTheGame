@@ -60,7 +60,7 @@
             this.LearnPnl.ForeColor = System.Drawing.SystemColors.Control;
             this.LearnPnl.Location = new System.Drawing.Point(0, 0);
             this.LearnPnl.Name = "LearnPnl";
-            this.LearnPnl.Size = new System.Drawing.Size(1060, 600);
+            this.LearnPnl.Size = new System.Drawing.Size(1059, 599);
             this.LearnPnl.TabIndex = 11;
             this.LearnPnl.Visible = false;
             // 
@@ -68,7 +68,7 @@
             // 
             this.BackBtn.BackgroundImage = global::BoxGame.Properties.Resources.BackBtn;
             this.BackBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BackBtn.Location = new System.Drawing.Point(54, 463);
+            this.BackBtn.Location = new System.Drawing.Point(53, 463);
             this.BackBtn.Name = "BackBtn";
             this.BackBtn.Size = new System.Drawing.Size(174, 93);
             this.BackBtn.TabIndex = 0;
@@ -178,9 +178,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BoxGame.Properties.Resources.GameBoard1;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1060, 600);
+            this.ClientSize = new System.Drawing.Size(1059, 599);
             this.Controls.Add(this.LearnPnl);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.MainMenuPanel);

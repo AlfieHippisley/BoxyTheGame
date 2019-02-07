@@ -163,26 +163,6 @@ namespace BoxGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GameBoard {
-            get {
-                object obj = ResourceManager.GetObject("GameBoard", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap GameBoard1 {
-            get {
-                object obj = ResourceManager.GetObject("GameBoard1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap learnbutton {
             get {
                 object obj = ResourceManager.GetObject("learnbutton", resourceCulture);
@@ -286,6 +266,16 @@ namespace BoxGame.Properties {
         internal static System.Drawing.Bitmap quitbuttonwhite {
             get {
                 object obj = ResourceManager.GetObject("quitbuttonwhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap scorebar {
+            get {
+                object obj = ResourceManager.GetObject("scorebar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

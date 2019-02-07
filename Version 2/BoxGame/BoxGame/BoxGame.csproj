@@ -82,12 +82,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="primebox.png" />
-    <None Include="Resources\GameBoard1.jpg" />
-    <None Include="Resources\GameBoard.jpg" />
     <None Include="Resources\LearnPanelPic.jpg" />
     <None Include="Resources\MainMenuPic.jpg" />
     <None Include="Resources\LearnPic.png" />
     <None Include="Resources\BackBtn.jpg" />
+    <None Include="Resources\scorebar.png" />
     <None Include="Resources\yesbuttonwhite.png" />
     <None Include="Resources\quitbuttonwhite.png" />
     <None Include="Resources\mainmenubackground.png" />
