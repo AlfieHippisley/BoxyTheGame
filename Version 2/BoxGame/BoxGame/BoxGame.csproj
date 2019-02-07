@@ -82,6 +82,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="primebox.png" />
+    <None Include="Resources\LearnPanelPic.jpg" />
+    <None Include="Resources\MainMenuPic.jpg" />
     <None Include="Resources\LearnPic.png" />
     <None Include="Resources\BackBtn.jpg" />
     <None Include="Resources\scorebar.png" />

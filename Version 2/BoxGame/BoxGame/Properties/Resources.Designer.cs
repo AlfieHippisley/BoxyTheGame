@@ -183,6 +183,16 @@ namespace BoxGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LearnPanelPic {
+            get {
+                object obj = ResourceManager.GetObject("LearnPanelPic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LearnPic {
             get {
                 object obj = ResourceManager.GetObject("LearnPic", resourceCulture);
@@ -196,6 +206,16 @@ namespace BoxGame.Properties {
         internal static System.Drawing.Bitmap mainmenubackground {
             get {
                 object obj = ResourceManager.GetObject("mainmenubackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MainMenuPic {
+            get {
+                object obj = ResourceManager.GetObject("MainMenuPic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

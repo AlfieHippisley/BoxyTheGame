@@ -142,6 +142,12 @@
   <data name="mainmenubackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mainmenubackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="MainMenuPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenuPic.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fedexonbelt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fedexonbelt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="exitbox1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exitbox1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -166,8 +172,8 @@
   <data name="exitbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exitbox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fedexonbelt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fedexonbelt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LearnPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LearnPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="upsbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\upsbox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,7 +190,7 @@
   <data name="fedexbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fedexbox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LearnPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LearnPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LearnPanelPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LearnPanelPic.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
