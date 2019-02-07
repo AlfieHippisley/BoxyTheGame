@@ -29,11 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameForm));
             this.PrimaryTimer = new System.Windows.Forms.Timer(this.components);
             this.LearnPnl = new System.Windows.Forms.Panel();
             this.BackBtn = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.MainMenuPanel = new System.Windows.Forms.Panel();
             this.ExitConfirmation = new System.Windows.Forms.Panel();
             this.CancelBtn = new System.Windows.Forms.Button();
@@ -60,7 +58,7 @@
             this.LearnPnl.ForeColor = System.Drawing.SystemColors.Control;
             this.LearnPnl.Location = new System.Drawing.Point(0, 0);
             this.LearnPnl.Name = "LearnPnl";
-            this.LearnPnl.Size = new System.Drawing.Size(1059, 599);
+            this.LearnPnl.Size = new System.Drawing.Size(1079, 563);
             this.LearnPnl.TabIndex = 11;
             this.LearnPnl.Visible = false;
             // 
@@ -68,22 +66,12 @@
             // 
             this.BackBtn.BackgroundImage = global::BoxGame.Properties.Resources.BackBtn;
             this.BackBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BackBtn.Location = new System.Drawing.Point(53, 463);
+            this.BackBtn.Location = new System.Drawing.Point(53, 430);
             this.BackBtn.Name = "BackBtn";
-            this.BackBtn.Size = new System.Drawing.Size(174, 93);
+            this.BackBtn.Size = new System.Drawing.Size(179, 97);
             this.BackBtn.TabIndex = 0;
             this.BackBtn.UseVisualStyleBackColor = true;
             this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(0, 709);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(767, 89);
-            this.panel1.TabIndex = 10;
             // 
             // MainMenuPanel
             // 
@@ -93,10 +81,11 @@
             this.MainMenuPanel.Controls.Add(this.QuitBtn);
             this.MainMenuPanel.Controls.Add(this.LearnBtn);
             this.MainMenuPanel.Controls.Add(this.PlayBtn);
+            this.MainMenuPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainMenuPanel.Location = new System.Drawing.Point(0, 0);
             this.MainMenuPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MainMenuPanel.Name = "MainMenuPanel";
-            this.MainMenuPanel.Size = new System.Drawing.Size(1060, 600);
+            this.MainMenuPanel.Size = new System.Drawing.Size(1079, 563);
             this.MainMenuPanel.TabIndex = 0;
             this.MainMenuPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainMenuPanel_Paint);
             // 
@@ -142,7 +131,7 @@
             // 
             this.QuitBtn.BackgroundImage = global::BoxGame.Properties.Resources.quitbutton;
             this.QuitBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.QuitBtn.Location = new System.Drawing.Point(493, 439);
+            this.QuitBtn.Location = new System.Drawing.Point(493, 417);
             this.QuitBtn.Margin = new System.Windows.Forms.Padding(4);
             this.QuitBtn.Name = "QuitBtn";
             this.QuitBtn.Size = new System.Drawing.Size(200, 100);
@@ -154,7 +143,7 @@
             // 
             this.LearnBtn.BackgroundImage = global::BoxGame.Properties.Resources.learnbutton;
             this.LearnBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LearnBtn.Location = new System.Drawing.Point(285, 439);
+            this.LearnBtn.Location = new System.Drawing.Point(285, 418);
             this.LearnBtn.Margin = new System.Windows.Forms.Padding(4);
             this.LearnBtn.Name = "LearnBtn";
             this.LearnBtn.Size = new System.Drawing.Size(200, 100);
@@ -166,7 +155,7 @@
             // 
             this.PlayBtn.BackgroundImage = global::BoxGame.Properties.Resources.playbutton;
             this.PlayBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PlayBtn.Location = new System.Drawing.Point(77, 439);
+            this.PlayBtn.Location = new System.Drawing.Point(77, 418);
             this.PlayBtn.Margin = new System.Windows.Forms.Padding(4);
             this.PlayBtn.Name = "PlayBtn";
             this.PlayBtn.Size = new System.Drawing.Size(200, 100);
@@ -178,10 +167,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1059, 599);
+            this.AutoSize = true;
+            this.BackgroundImage = global::BoxGame.Properties.Resources.GameBoard;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1079, 563);
             this.Controls.Add(this.LearnPnl);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.MainMenuPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GameForm";
             this.Text = "Boxy The Game";
@@ -203,7 +195,6 @@
         private System.Windows.Forms.Panel ExitConfirmation;
         private System.Windows.Forms.Button CancelBtn;
         private System.Windows.Forms.Button YesBtn;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel LearnPnl;
         private System.Windows.Forms.Button BackBtn;
     }

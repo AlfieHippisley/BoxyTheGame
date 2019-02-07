@@ -15,8 +15,8 @@ namespace BoxGame
     public partial class GameForm : Form
     {
         // Constant Values
-        public const int gameBoardHeight = 10;
-        public const int gameBoardWidth = 10;
+        public const int gameBoardHeight = 8;
+        public const int gameBoardWidth = 8;
         public const int comboSize = 2;
 
         // General Global Varibles
