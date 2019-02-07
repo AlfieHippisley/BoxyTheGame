@@ -121,8 +121,8 @@
   <data name="beltstart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\beltstart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="scorebar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\scorebar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="learnmenubackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\learnmenubackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="learnbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\learnbutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,9 +151,6 @@
   <data name="exitbox1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exitbox1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="learnmenubackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\learnmenubackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="beltarea" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\beltarea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -166,8 +163,14 @@
   <data name="primebox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\primebox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GameBoard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GameBoard.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="EMPTYbelt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\EMPTYbelt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LearnPanelPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LearnPanelPic.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exitbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exitbox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,7 +193,7 @@
   <data name="fedexbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fedexbox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LearnPanelPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LearnPanelPic.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GameBoard1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GameBoard1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
