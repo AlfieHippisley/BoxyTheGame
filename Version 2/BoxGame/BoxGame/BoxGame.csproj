@@ -82,6 +82,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="primebox.png" />
+    <None Include="Resources\fedexonbelt.png" />
+    <None Include="Resources\EMPTYbelt.png" />
+    <None Include="Resources\beltstart.png" />
+    <None Include="Resources\upsonbelt.png" />
+    <None Include="Resources\primeonbelt.png" />
+    <None Include="Resources\scorenotebook.png" />
+    <None Include="Resources\mainmenubackground.png" />
+    <None Include="Resources\learnmenubackground.png" />
     <None Include="Resources\StartOverBtn.jpg" />
     <None Include="Resources\QuitJobBtn.jpg" />
     <None Include="Resources\GameBoard.jpg" />
@@ -92,20 +100,13 @@
     <None Include="Resources\scorebar.png" />
     <None Include="Resources\yesbuttonwhite.png" />
     <None Include="Resources\quitbuttonwhite.png" />
-    <None Include="Resources\mainmenubackground.png" />
     <None Include="Resources\exitbox1.png" />
-    <None Include="Resources\beltstart.png" />
-    <None Include="Resources\upsonbelt.png" />
-    <None Include="Resources\primeonbelt.png" />
-    <None Include="Resources\fedexonbelt.png" />
-    <None Include="Resources\EMPTYbelt.png" />
     <None Include="Resources\beltarea.png" />
     <None Include="Resources\emptyslot.png" />
     <None Include="Resources\upsbox.png" />
     <None Include="Resources\quitbutton.png" />
     <None Include="Resources\primebox.png" />
     <None Include="Resources\playbutton.png" />
-    <None Include="Resources\learnmenubackground.png" />
     <None Include="Resources\learnbutton.png" />
     <None Include="Resources\fedexbox.png" />
     <None Include="Resources\exitbox.png" />

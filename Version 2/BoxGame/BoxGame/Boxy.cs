@@ -15,13 +15,16 @@ namespace BoxGame
     public partial class GameForm : Form
     {
         // Constant Values
-        public const int gameBoardHeight = 8;
-        public const int gameBoardWidth = 8;
+        public const int gameBoardHeight = 10;
+        public const int gameBoardWidth = 10;
         public const int comboSize = 2;
 
         // General Global Varibles
         int tickCounter = 1;
         int sameGenCounter = 0;
+        int totalScore = 0;
+        int totalDispatches = 0;
+        int averageDispatches = 0;
 
         // Box Related Globals
         int currentXPos = 0;
@@ -52,10 +55,12 @@ namespace BoxGame
                     btn[x, y] = new Button();
 
                     // Set the size of the button and the link the event handler
-                    btn[x, y].SetBounds(57 * x, 57 * y, 60, 60);
+                    btn[x, y].SetBounds(60 * x, 60 * y, 62, 62);
                     btn[x, y].Click += new EventHandler(this.btnEvent_Click);
 
-                    // Set the image background of the button
+                    // Set the image background of the button & other design settings
+                    btn[x, y].FlatStyle = FlatStyle.Flat;
+                    btn[x, y].FlatAppearance.BorderSize = 0;
                     btn[x, y].BackgroundImage = BoxGame.Properties.Resources.emptyslot;
                     btn[x, y].BackgroundImageLayout = ImageLayout.Stretch;
                     btn[x, y].Tag = "empty";
@@ -106,6 +111,10 @@ namespace BoxGame
         {
             // We keep refreshing the belt on every tick to keep it upto date
             CreateBelt();
+
+            string temp = totalScore.ToString();
+            TotalScoreLabel.Text = temp;
+            TotalDispatch.Text = totalDispatches.ToString();
 
             // We keep track of timer ticks to measure a boxes lifetime, with each tick we count up
             tickCounter += 1;
@@ -417,6 +426,8 @@ namespace BoxGame
                 Console.WriteLine("We are going to loop for a total of = ");
                 Console.WriteLine(upMatchCount + downMatchCount + 1);
 
+                totalDispatches++;
+
                 for (int x = 0; x <= (upMatchCount + downMatchCount); x++)
                 {
                     Console.WriteLine("BoxChecker = ");
@@ -427,6 +438,8 @@ namespace BoxGame
                     // Go to each left image and replace with empty
                     btn[currentXPos, boxChecker].BackgroundImage = BoxGame.Properties.Resources.emptyslot;
                     btn[currentXPos, boxChecker].Tag = "empty";
+
+                    totalScore++;
 
                 }
             }
@@ -552,6 +565,10 @@ namespace BoxGame
                 Console.WriteLine("We are going to loop for a total of = ");
                 Console.WriteLine(leftMatchCount + rightMatchCount + 1);
 
+                totalDispatches++;
+
+                averageDispatches = 0;
+
                 for (int x = 0; x <= (leftMatchCount+rightMatchCount); x++)
                 {
                     Console.WriteLine("BoxChecker = ");
@@ -562,6 +579,8 @@ namespace BoxGame
                     // Go to each left image and replace with empty
                     btn[boxChecker, currentYPos].BackgroundImage = BoxGame.Properties.Resources.emptyslot;
                     btn[boxChecker, currentYPos].Tag = "empty";
+
+                    totalScore++;
 
                 }
             }
@@ -575,12 +594,16 @@ namespace BoxGame
         private void PlayBtn_Click(object sender, EventArgs e)
         {
             MainMenuPanel.Visible = false;
+            totalScore = 0;
+            totalDispatches = 0;
+            averageDispatches = 0;
             PrimaryTimer.Start();
         }
 
         private void LearnBtn_Click(object sender, EventArgs e)
         {
             LearnPnl.Visible = true;
+            LearnPnl.BringToFront();
         }
 
         private void QuitBtn_Click(object sender, EventArgs e)
