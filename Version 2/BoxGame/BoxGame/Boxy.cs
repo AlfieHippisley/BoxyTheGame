@@ -115,6 +115,7 @@ namespace BoxGame
             string temp = totalScore.ToString();
             TotalScoreLabel.Text = temp;
             TotalDispatch.Text = totalDispatches.ToString();
+            AverageDispatchSize.Text = averageDispatches.ToString();
 
             // We keep track of timer ticks to measure a boxes lifetime, with each tick we count up
             tickCounter += 1;
@@ -442,6 +443,7 @@ namespace BoxGame
                     totalScore++;
 
                 }
+                averageDispatches = totalScore / totalDispatches;
             }
         }
 
@@ -567,8 +569,6 @@ namespace BoxGame
 
                 totalDispatches++;
 
-                averageDispatches = 0;
-
                 for (int x = 0; x <= (leftMatchCount+rightMatchCount); x++)
                 {
                     Console.WriteLine("BoxChecker = ");
@@ -583,6 +583,8 @@ namespace BoxGame
                     totalScore++;
 
                 }
+
+                averageDispatches = totalScore / totalDispatches;
             }
         }
 
@@ -629,6 +631,7 @@ namespace BoxGame
         private void QuitJobBtn_Click(object sender, EventArgs e)
         {
             MainMenuPanel.Visible = true;
+            PrimaryTimer.Stop();
         }
 
         private void StartOverBtn_Click(object sender, EventArgs e)
