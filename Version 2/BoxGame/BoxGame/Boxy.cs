@@ -23,6 +23,7 @@ namespace BoxGame
         int tickCounter = 1;
         int sameGenCounter = 0;
         Boolean gameLost = false;
+        Boolean paused = true;
 
         // Score varibles
         int totalScore = 0;
@@ -604,6 +605,7 @@ namespace BoxGame
             totalScore = 0;
             totalDispatches = 0;
             averageDispatches = 0;
+            gameLost = false;
 
             PrimaryTimer.Stop();
 
@@ -636,10 +638,7 @@ namespace BoxGame
         private void PlayBtn_Click(object sender, EventArgs e)
         {
             MainMenuPanel.Visible = false;
-            totalScore = 0;
-            totalDispatches = 0;
-            averageDispatches = 0;
-            gameLost = false;
+            resetGame();
             PrimaryTimer.Start();
         }
 
@@ -678,6 +677,22 @@ namespace BoxGame
         private void StartOverBtn_Click(object sender, EventArgs e)
         {
             resetGame();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if(paused)
+            {
+                paused = false;
+                pauseButton.BackgroundImage = BoxGame.Properties.Resources.pausebutton;
+                PrimaryTimer.Start();
+            }
+            else
+            {
+                paused = true;
+                pauseButton.BackgroundImage = BoxGame.Properties.Resources.unpausebutton;
+                PrimaryTimer.Stop();
+            }
         }
     }
 }

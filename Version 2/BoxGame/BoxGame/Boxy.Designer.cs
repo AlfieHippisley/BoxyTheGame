@@ -45,6 +45,7 @@
             this.TotalScoreLabel = new System.Windows.Forms.Label();
             this.AverageDispatchSize = new System.Windows.Forms.Label();
             this.TotalDispatch = new System.Windows.Forms.Label();
+            this.pauseButton = new System.Windows.Forms.Button();
             this.LearnPnl.SuspendLayout();
             this.MainMenuPanel.SuspendLayout();
             this.ExitConfirmation.SuspendLayout();
@@ -116,7 +117,7 @@
             this.CancelBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CancelBtn.Location = new System.Drawing.Point(237, 169);
-            this.CancelBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CancelBtn.Margin = new System.Windows.Forms.Padding(4);
             this.CancelBtn.Name = "CancelBtn";
             this.CancelBtn.Size = new System.Drawing.Size(156, 73);
             this.CancelBtn.TabIndex = 3;
@@ -128,7 +129,7 @@
             this.YesBtn.BackgroundImage = global::BoxGame.Properties.Resources.yesbuttonwhite;
             this.YesBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.YesBtn.Location = new System.Drawing.Point(28, 169);
-            this.YesBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.YesBtn.Margin = new System.Windows.Forms.Padding(4);
             this.YesBtn.Name = "YesBtn";
             this.YesBtn.Size = new System.Drawing.Size(156, 73);
             this.YesBtn.TabIndex = 2;
@@ -140,7 +141,7 @@
             this.QuitBtn.BackgroundImage = global::BoxGame.Properties.Resources.quitbutton;
             this.QuitBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.QuitBtn.Location = new System.Drawing.Point(493, 562);
-            this.QuitBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.QuitBtn.Margin = new System.Windows.Forms.Padding(4);
             this.QuitBtn.Name = "QuitBtn";
             this.QuitBtn.Size = new System.Drawing.Size(200, 100);
             this.QuitBtn.TabIndex = 8;
@@ -152,7 +153,7 @@
             this.LearnBtn.BackgroundImage = global::BoxGame.Properties.Resources.learnbutton;
             this.LearnBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.LearnBtn.Location = new System.Drawing.Point(285, 562);
-            this.LearnBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LearnBtn.Margin = new System.Windows.Forms.Padding(4);
             this.LearnBtn.Name = "LearnBtn";
             this.LearnBtn.Size = new System.Drawing.Size(200, 100);
             this.LearnBtn.TabIndex = 7;
@@ -164,7 +165,7 @@
             this.PlayBtn.BackgroundImage = global::BoxGame.Properties.Resources.playbutton;
             this.PlayBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PlayBtn.Location = new System.Drawing.Point(77, 562);
-            this.PlayBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PlayBtn.Margin = new System.Windows.Forms.Padding(4);
             this.PlayBtn.Name = "PlayBtn";
             this.PlayBtn.Size = new System.Drawing.Size(200, 100);
             this.PlayBtn.TabIndex = 6;
@@ -173,7 +174,7 @@
             // 
             // QuitJobBtn
             // 
-            this.QuitJobBtn.BackgroundImage = global::BoxGame.Properties.Resources.QuitJobBtn;
+            this.QuitJobBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("QuitJobBtn.BackgroundImage")));
             this.QuitJobBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.QuitJobBtn.Location = new System.Drawing.Point(901, 409);
             this.QuitJobBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -185,7 +186,7 @@
             // 
             // StartOverBtn
             // 
-            this.StartOverBtn.BackgroundImage = global::BoxGame.Properties.Resources.StartOverBtn;
+            this.StartOverBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("StartOverBtn.BackgroundImage")));
             this.StartOverBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.StartOverBtn.Location = new System.Drawing.Point(1040, 409);
             this.StartOverBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -225,6 +226,18 @@
             this.TotalDispatch.TabIndex = 16;
             this.TotalDispatch.Text = "0";
             // 
+            // pauseButton
+            // 
+            this.pauseButton.BackgroundImage = global::BoxGame.Properties.Resources.pausebutton;
+            this.pauseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pauseButton.Location = new System.Drawing.Point(1191, 409);
+            this.pauseButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pauseButton.Name = "pauseButton";
+            this.pauseButton.Size = new System.Drawing.Size(110, 62);
+            this.pauseButton.TabIndex = 17;
+            this.pauseButton.UseVisualStyleBackColor = true;
+            this.pauseButton.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -240,8 +253,9 @@
             this.Controls.Add(this.AverageDispatchSize);
             this.Controls.Add(this.TotalDispatch);
             this.Controls.Add(this.TotalScoreLabel);
+            this.Controls.Add(this.pauseButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GameForm";
             this.Text = "Boxy The Game";
             this.Load += new System.EventHandler(this.GameForm_Load);
@@ -269,6 +283,7 @@
         private System.Windows.Forms.Label TotalScoreLabel;
         private System.Windows.Forms.Label AverageDispatchSize;
         private System.Windows.Forms.Label TotalDispatch;
+        private System.Windows.Forms.Button pauseButton;
     }
 }
 

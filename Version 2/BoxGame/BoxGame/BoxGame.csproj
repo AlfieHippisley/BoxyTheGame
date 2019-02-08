@@ -82,6 +82,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="primebox.png" />
+    <None Include="Resources\pausebutton.png" />
+    <None Include="Resources\unpausebutton.png" />
+    <None Include="Resources\startagainbutton.png" />
+    <None Include="Resources\QuitJobButton.png" />
     <None Include="Resources\fedexonbelt.png" />
     <None Include="Resources\EMPTYbelt.png" />
     <None Include="Resources\beltstart.png" />

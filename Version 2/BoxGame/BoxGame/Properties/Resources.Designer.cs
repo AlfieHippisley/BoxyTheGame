@@ -223,6 +223,16 @@ namespace BoxGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pausebutton {
+            get {
+                object obj = ResourceManager.GetObject("pausebutton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap playbutton {
             get {
                 object obj = ResourceManager.GetObject("playbutton", resourceCulture);
@@ -273,9 +283,9 @@ namespace BoxGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap QuitJobBtn {
+        internal static System.Drawing.Bitmap QuitJobButton {
             get {
-                object obj = ResourceManager.GetObject("QuitJobBtn", resourceCulture);
+                object obj = ResourceManager.GetObject("QuitJobButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,9 +293,19 @@ namespace BoxGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap StartOverBtn {
+        internal static System.Drawing.Bitmap startagainbutton {
             get {
-                object obj = ResourceManager.GetObject("StartOverBtn", resourceCulture);
+                object obj = ResourceManager.GetObject("startagainbutton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unpausebutton {
+            get {
+                object obj = ResourceManager.GetObject("unpausebutton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

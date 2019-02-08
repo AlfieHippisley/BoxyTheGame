@@ -142,9 +142,6 @@
   <data name="mainmenubackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mainmenubackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="StartOverBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\StartOverBtn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="MainMenuPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MainMenuPic.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -181,9 +178,6 @@
   <data name="primeonbelt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\primeonbelt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="QuitJobBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\QuitJobBtn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="cancelbuttonwhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cancelbuttonwhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -195,5 +189,17 @@
   </data>
   <data name="GameBoard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\scorenotebook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pausebutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pausebutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QuitJobButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QuitJobButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="startagainbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\startagainbutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unpausebutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unpausebutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
