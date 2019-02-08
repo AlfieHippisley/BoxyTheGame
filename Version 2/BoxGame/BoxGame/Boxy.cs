@@ -456,6 +456,9 @@ namespace BoxGame
 
                 }
                 averageDispatches = totalScore / totalDispatches;
+                //Plays a sound when a combo is made
+                System.Media.SoundPlayer comboMusic = new System.Media.SoundPlayer(BoxGame.Properties.Resources.ComboMusicFIle);
+                comboMusic.Play();
             }
         }
 
@@ -597,6 +600,9 @@ namespace BoxGame
                 }
 
                 averageDispatches = totalScore / totalDispatches;
+                //Plays a sound when a combo is made
+                System.Media.SoundPlayer comboMusic = new System.Media.SoundPlayer(BoxGame.Properties.Resources.ComboMusicFIle);
+                comboMusic.Play();
             }
         }
 
