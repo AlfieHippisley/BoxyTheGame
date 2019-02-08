@@ -686,15 +686,17 @@ namespace BoxGame
             resetGame();
         }
 
+        // Cant rename this
         private void button1_Click_1(object sender, EventArgs e)
         {
+            Console.WriteLine("The game is " + gameLost);
             if (paused && gameLost == false)
             {
                 paused = false;
                 pauseButton.BackgroundImage = BoxGame.Properties.Resources.pausebutton;
                 PrimaryTimer.Start();
             }
-            if (!paused && gameLost == false)
+            else if (!paused && gameLost == false)
             {
                 paused = true;
                 pauseButton.BackgroundImage = BoxGame.Properties.Resources.unpausebutton;
