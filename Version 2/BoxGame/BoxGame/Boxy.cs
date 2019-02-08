@@ -178,6 +178,7 @@ namespace BoxGame
             {
                 PrimaryTimer.Stop();
                 gameLost = true;
+                FiredPnl.Visible = true;
             }
 
             // Box Type 1 - Spawn Prime Box
