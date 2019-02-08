@@ -34,12 +34,12 @@
             this.LearnPnl = new System.Windows.Forms.Panel();
             this.BackBtn = new System.Windows.Forms.Button();
             this.MainMenuPanel = new System.Windows.Forms.Panel();
-            this.QuitBtn = new System.Windows.Forms.Button();
-            this.LearnBtn = new System.Windows.Forms.Button();
-            this.PlayBtn = new System.Windows.Forms.Button();
             this.ExitConfirmation = new System.Windows.Forms.Panel();
             this.CancelBtn = new System.Windows.Forms.Button();
             this.YesBtn = new System.Windows.Forms.Button();
+            this.QuitBtn = new System.Windows.Forms.Button();
+            this.LearnBtn = new System.Windows.Forms.Button();
+            this.PlayBtn = new System.Windows.Forms.Button();
             this.QuitJobBtn = new System.Windows.Forms.Button();
             this.StartOverBtn = new System.Windows.Forms.Button();
             this.TotalScoreLabel = new System.Windows.Forms.Label();
@@ -63,9 +63,9 @@
             this.LearnPnl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LearnPnl.ForeColor = System.Drawing.SystemColors.Control;
             this.LearnPnl.Location = new System.Drawing.Point(0, 0);
-            this.LearnPnl.Margin = new System.Windows.Forms.Padding(2);
+            this.LearnPnl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LearnPnl.Name = "LearnPnl";
-            this.LearnPnl.Size = new System.Drawing.Size(1044, 561);
+            this.LearnPnl.Size = new System.Drawing.Size(1392, 690);
             this.LearnPnl.TabIndex = 11;
             this.LearnPnl.Visible = false;
             // 
@@ -73,10 +73,10 @@
             // 
             this.BackBtn.BackgroundImage = global::BoxGame.Properties.Resources.BackBtn;
             this.BackBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BackBtn.Location = new System.Drawing.Point(58, 459);
-            this.BackBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.BackBtn.Location = new System.Drawing.Point(77, 565);
+            this.BackBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BackBtn.Name = "BackBtn";
-            this.BackBtn.Size = new System.Drawing.Size(134, 79);
+            this.BackBtn.Size = new System.Drawing.Size(179, 97);
             this.BackBtn.TabIndex = 0;
             this.BackBtn.UseVisualStyleBackColor = true;
             this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
@@ -91,44 +91,11 @@
             this.MainMenuPanel.Controls.Add(this.PlayBtn);
             this.MainMenuPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainMenuPanel.Location = new System.Drawing.Point(0, 0);
-            this.MainMenuPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.MainMenuPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MainMenuPanel.Name = "MainMenuPanel";
-            this.MainMenuPanel.Size = new System.Drawing.Size(1044, 561);
+            this.MainMenuPanel.Size = new System.Drawing.Size(1392, 690);
             this.MainMenuPanel.TabIndex = 0;
             this.MainMenuPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainMenuPanel_Paint);
-            // 
-            // QuitBtn
-            // 
-            this.QuitBtn.BackgroundImage = global::BoxGame.Properties.Resources.quitbutton;
-            this.QuitBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.QuitBtn.Location = new System.Drawing.Point(370, 457);
-            this.QuitBtn.Name = "QuitBtn";
-            this.QuitBtn.Size = new System.Drawing.Size(150, 81);
-            this.QuitBtn.TabIndex = 8;
-            this.QuitBtn.UseVisualStyleBackColor = true;
-            this.QuitBtn.Click += new System.EventHandler(this.QuitBtn_Click);
-            // 
-            // LearnBtn
-            // 
-            this.LearnBtn.BackgroundImage = global::BoxGame.Properties.Resources.learnbutton;
-            this.LearnBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LearnBtn.Location = new System.Drawing.Point(214, 457);
-            this.LearnBtn.Name = "LearnBtn";
-            this.LearnBtn.Size = new System.Drawing.Size(150, 81);
-            this.LearnBtn.TabIndex = 7;
-            this.LearnBtn.UseVisualStyleBackColor = true;
-            this.LearnBtn.Click += new System.EventHandler(this.LearnBtn_Click);
-            // 
-            // PlayBtn
-            // 
-            this.PlayBtn.BackgroundImage = global::BoxGame.Properties.Resources.playbutton;
-            this.PlayBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PlayBtn.Location = new System.Drawing.Point(58, 457);
-            this.PlayBtn.Name = "PlayBtn";
-            this.PlayBtn.Size = new System.Drawing.Size(150, 81);
-            this.PlayBtn.TabIndex = 6;
-            this.PlayBtn.UseVisualStyleBackColor = true;
-            this.PlayBtn.Click += new System.EventHandler(this.PlayBtn_Click);
             // 
             // ExitConfirmation
             // 
@@ -136,10 +103,10 @@
             this.ExitConfirmation.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ExitConfirmation.Controls.Add(this.CancelBtn);
             this.ExitConfirmation.Controls.Add(this.YesBtn);
-            this.ExitConfirmation.Location = new System.Drawing.Point(370, 82);
-            this.ExitConfirmation.Margin = new System.Windows.Forms.Padding(2);
+            this.ExitConfirmation.Location = new System.Drawing.Point(493, 101);
+            this.ExitConfirmation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ExitConfirmation.Name = "ExitConfirmation";
-            this.ExitConfirmation.Size = new System.Drawing.Size(331, 310);
+            this.ExitConfirmation.Size = new System.Drawing.Size(441, 382);
             this.ExitConfirmation.TabIndex = 9;
             this.ExitConfirmation.Visible = false;
             // 
@@ -148,9 +115,10 @@
             this.CancelBtn.BackgroundImage = global::BoxGame.Properties.Resources.cancelbuttonwhite;
             this.CancelBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CancelBtn.Location = new System.Drawing.Point(178, 137);
+            this.CancelBtn.Location = new System.Drawing.Point(237, 169);
+            this.CancelBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CancelBtn.Name = "CancelBtn";
-            this.CancelBtn.Size = new System.Drawing.Size(117, 59);
+            this.CancelBtn.Size = new System.Drawing.Size(156, 73);
             this.CancelBtn.TabIndex = 3;
             this.CancelBtn.UseVisualStyleBackColor = true;
             this.CancelBtn.Click += new System.EventHandler(this.CancelBtn_Click);
@@ -159,21 +127,58 @@
             // 
             this.YesBtn.BackgroundImage = global::BoxGame.Properties.Resources.yesbuttonwhite;
             this.YesBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.YesBtn.Location = new System.Drawing.Point(21, 137);
+            this.YesBtn.Location = new System.Drawing.Point(28, 169);
+            this.YesBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.YesBtn.Name = "YesBtn";
-            this.YesBtn.Size = new System.Drawing.Size(117, 59);
+            this.YesBtn.Size = new System.Drawing.Size(156, 73);
             this.YesBtn.TabIndex = 2;
             this.YesBtn.UseVisualStyleBackColor = true;
             this.YesBtn.Click += new System.EventHandler(this.YesBtn_Click);
+            // 
+            // QuitBtn
+            // 
+            this.QuitBtn.BackgroundImage = global::BoxGame.Properties.Resources.quitbutton;
+            this.QuitBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.QuitBtn.Location = new System.Drawing.Point(493, 562);
+            this.QuitBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.QuitBtn.Name = "QuitBtn";
+            this.QuitBtn.Size = new System.Drawing.Size(200, 100);
+            this.QuitBtn.TabIndex = 8;
+            this.QuitBtn.UseVisualStyleBackColor = true;
+            this.QuitBtn.Click += new System.EventHandler(this.QuitBtn_Click);
+            // 
+            // LearnBtn
+            // 
+            this.LearnBtn.BackgroundImage = global::BoxGame.Properties.Resources.learnbutton;
+            this.LearnBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LearnBtn.Location = new System.Drawing.Point(285, 562);
+            this.LearnBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LearnBtn.Name = "LearnBtn";
+            this.LearnBtn.Size = new System.Drawing.Size(200, 100);
+            this.LearnBtn.TabIndex = 7;
+            this.LearnBtn.UseVisualStyleBackColor = true;
+            this.LearnBtn.Click += new System.EventHandler(this.LearnBtn_Click);
+            // 
+            // PlayBtn
+            // 
+            this.PlayBtn.BackgroundImage = global::BoxGame.Properties.Resources.playbutton;
+            this.PlayBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PlayBtn.Location = new System.Drawing.Point(77, 562);
+            this.PlayBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PlayBtn.Name = "PlayBtn";
+            this.PlayBtn.Size = new System.Drawing.Size(200, 100);
+            this.PlayBtn.TabIndex = 6;
+            this.PlayBtn.UseVisualStyleBackColor = true;
+            this.PlayBtn.Click += new System.EventHandler(this.PlayBtn_Click);
             // 
             // QuitJobBtn
             // 
             this.QuitJobBtn.BackgroundImage = global::BoxGame.Properties.Resources.QuitJobBtn;
             this.QuitJobBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.QuitJobBtn.Location = new System.Drawing.Point(676, 332);
-            this.QuitJobBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.QuitJobBtn.Location = new System.Drawing.Point(901, 409);
+            this.QuitJobBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.QuitJobBtn.Name = "QuitJobBtn";
-            this.QuitJobBtn.Size = new System.Drawing.Size(100, 50);
+            this.QuitJobBtn.Size = new System.Drawing.Size(133, 62);
             this.QuitJobBtn.TabIndex = 12;
             this.QuitJobBtn.UseVisualStyleBackColor = true;
             this.QuitJobBtn.Click += new System.EventHandler(this.QuitJobBtn_Click);
@@ -182,10 +187,10 @@
             // 
             this.StartOverBtn.BackgroundImage = global::BoxGame.Properties.Resources.StartOverBtn;
             this.StartOverBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.StartOverBtn.Location = new System.Drawing.Point(780, 332);
-            this.StartOverBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.StartOverBtn.Location = new System.Drawing.Point(1040, 409);
+            this.StartOverBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.StartOverBtn.Name = "StartOverBtn";
-            this.StartOverBtn.Size = new System.Drawing.Size(109, 50);
+            this.StartOverBtn.Size = new System.Drawing.Size(145, 62);
             this.StartOverBtn.TabIndex = 13;
             this.StartOverBtn.UseVisualStyleBackColor = true;
             this.StartOverBtn.Click += new System.EventHandler(this.StartOverBtn_Click);
@@ -193,38 +198,41 @@
             // TotalScoreLabel
             // 
             this.TotalScoreLabel.AutoSize = true;
-            this.TotalScoreLabel.Location = new System.Drawing.Point(898, 220);
+            this.TotalScoreLabel.Location = new System.Drawing.Point(1197, 271);
+            this.TotalScoreLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TotalScoreLabel.Name = "TotalScoreLabel";
-            this.TotalScoreLabel.Size = new System.Drawing.Size(13, 13);
+            this.TotalScoreLabel.Size = new System.Drawing.Size(16, 17);
             this.TotalScoreLabel.TabIndex = 14;
             this.TotalScoreLabel.Text = "0";
             // 
             // AverageDispatchSize
             // 
             this.AverageDispatchSize.AutoSize = true;
-            this.AverageDispatchSize.Location = new System.Drawing.Point(898, 290);
+            this.AverageDispatchSize.Location = new System.Drawing.Point(1197, 357);
+            this.AverageDispatchSize.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.AverageDispatchSize.Name = "AverageDispatchSize";
-            this.AverageDispatchSize.Size = new System.Drawing.Size(13, 13);
+            this.AverageDispatchSize.Size = new System.Drawing.Size(16, 17);
             this.AverageDispatchSize.TabIndex = 15;
             this.AverageDispatchSize.Text = "0";
             // 
             // TotalDispatch
             // 
             this.TotalDispatch.AutoSize = true;
-            this.TotalDispatch.Location = new System.Drawing.Point(898, 256);
+            this.TotalDispatch.Location = new System.Drawing.Point(1197, 315);
+            this.TotalDispatch.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TotalDispatch.Name = "TotalDispatch";
-            this.TotalDispatch.Size = new System.Drawing.Size(13, 13);
+            this.TotalDispatch.Size = new System.Drawing.Size(16, 17);
             this.TotalDispatch.TabIndex = 16;
             this.TotalDispatch.Text = "0";
             // 
             // GameForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackgroundImage = global::BoxGame.Properties.Resources.GameBoard;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1044, 561);
+            this.ClientSize = new System.Drawing.Size(1392, 690);
             this.Controls.Add(this.MainMenuPanel);
             this.Controls.Add(this.LearnPnl);
             this.Controls.Add(this.QuitJobBtn);
@@ -233,6 +241,7 @@
             this.Controls.Add(this.TotalDispatch);
             this.Controls.Add(this.TotalScoreLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "GameForm";
             this.Text = "Boxy The Game";
             this.Load += new System.EventHandler(this.GameForm_Load);

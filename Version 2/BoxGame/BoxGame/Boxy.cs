@@ -599,6 +599,35 @@ namespace BoxGame
             }
         }
 
+        private void resetGame()
+        {
+            totalScore = 0;
+            totalDispatches = 0;
+            averageDispatches = 0;
+
+            PrimaryTimer.Stop();
+
+            for(int x = 0; x < gameBoardHeight; x++)
+            {
+                for(int y = 0; y < gameBoardWidth; y++)
+                {
+                    btn[x, y].BackgroundImage = BoxGame.Properties.Resources.emptyslot;
+                    btn[x, y].Tag = "empty";
+                }
+            }
+
+            // When the form has loaded we mark out the parts of the grid for the belt
+            for (int x = 0; x < gameBoardWidth; x++)
+            {
+                for (int y = 0; y < 2; y++)
+                {
+                    btn[x, y].BackgroundImage = BoxGame.Properties.Resources.beltarea;
+                }
+            }
+            tickCounter = 0;
+            PrimaryTimer.Start();
+        }
+
         private void MainMenuPanel_Paint(object sender, PaintEventArgs e)
         {
 
@@ -648,7 +677,7 @@ namespace BoxGame
 
         private void StartOverBtn_Click(object sender, EventArgs e)
         {
-            Application.Restart();
+            resetGame();
         }
     }
 }
