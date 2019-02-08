@@ -243,9 +243,9 @@
             // 
             this.FiredPnl.BackgroundImage = global::BoxGame.Properties.Resources.gameover;
             this.FiredPnl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.FiredPnl.Location = new System.Drawing.Point(325, 50);
+            this.FiredPnl.Location = new System.Drawing.Point(325, 150);
             this.FiredPnl.Name = "FiredPnl";
-            this.FiredPnl.Size = new System.Drawing.Size(800, 600);
+            this.FiredPnl.Size = new System.Drawing.Size(795, 397);
             this.FiredPnl.TabIndex = 18;
             this.FiredPnl.Visible = false;
             // 
