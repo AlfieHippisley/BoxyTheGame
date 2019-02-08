@@ -652,6 +652,7 @@ namespace BoxGame
             MainMenuPanel.Visible = false;
             resetGame();
             PrimaryTimer.Start();
+            FiredPnl.Visible = false;
         }
 
         private void LearnBtn_Click(object sender, EventArgs e)
@@ -689,6 +690,7 @@ namespace BoxGame
         private void StartOverBtn_Click(object sender, EventArgs e)
         {
             resetGame();
+            FiredPnl.Visible = false;
         }
 
         // Cant rename this
