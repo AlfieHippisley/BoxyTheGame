@@ -702,5 +702,12 @@ namespace BoxGame
                 PrimaryTimer.Stop();
             }
         }
+
+        private void BackBtn2_Click(object sender, EventArgs e)
+        {
+            MainMenuPanel.Visible = true;
+            PrimaryTimer.Stop();
+            FiredPnl.Visible = false;
+        }
     }
 }
