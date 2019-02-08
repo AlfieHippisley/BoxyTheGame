@@ -112,6 +112,16 @@ namespace BoxGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap easybutton {
+            get {
+                object obj = ResourceManager.GetObject("easybutton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap EMPTYbelt {
             get {
                 object obj = ResourceManager.GetObject("EMPTYbelt", resourceCulture);
@@ -192,6 +202,16 @@ namespace BoxGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hardbutton {
+            get {
+                object obj = ResourceManager.GetObject("hardbutton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap learnbutton {
             get {
                 object obj = ResourceManager.GetObject("learnbutton", resourceCulture);
@@ -235,6 +255,16 @@ namespace BoxGame.Properties {
         internal static System.Drawing.Bitmap MainMenuPic {
             get {
                 object obj = ResourceManager.GetObject("MainMenuPic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mediumbutton {
+            get {
+                object obj = ResourceManager.GetObject("mediumbutton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

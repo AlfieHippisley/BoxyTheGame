@@ -23,7 +23,7 @@ namespace BoxGame
         int tickCounter = 1;
         int sameGenCounter = 0;
         Boolean gameLost = false;
-        Boolean paused = true;
+        Boolean paused = false;
 
         // Score varibles
         int totalScore = 0;
@@ -103,12 +103,16 @@ namespace BoxGame
             // These lines allow us to figure out where the user has clicked the mouse so we can move the belt
             https://stackoverflow.com/questions/14172617/prind-index-of-2d-array-using-the-click-event
 
-            Button ButtonToIndex = (Button)sender;
-            userX = int.Parse(ButtonToIndex.Name.Split()[1]);
-            userY = int.Parse(ButtonToIndex.Name.Split()[3]);
 
-            // On every click we need to refresh the belts location in the grid because the user might have moved it
-            CreateBelt();
+            Button ButtonToIndex = (Button)sender;
+
+            if (!paused)
+            {
+                userX = int.Parse(ButtonToIndex.Name.Split()[1]);
+                userY = int.Parse(ButtonToIndex.Name.Split()[3]);
+
+                CreateBelt();
+            }
         }
 
         private void PrimaryTimer_Tick(object sender, EventArgs e)
@@ -710,6 +714,16 @@ namespace BoxGame
             MainMenuPanel.Visible = true;
             PrimaryTimer.Stop();
             FiredPnl.Visible = false;
+        }
+
+        private void easybutton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MedButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

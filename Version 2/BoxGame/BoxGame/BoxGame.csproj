@@ -82,6 +82,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="primebox.png" />
+    <None Include="Resources\mediumbutton.png" />
+    <None Include="Resources\hardbutton.png" />
+    <None Include="Resources\easybutton.png" />
     <None Include="Resources\gameover.png" />
     <None Include="Resources\ComboMusicFile.wav" />
     <None Include="Resources\pausebutton.png" />
