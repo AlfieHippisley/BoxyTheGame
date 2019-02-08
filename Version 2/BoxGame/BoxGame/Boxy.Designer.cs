@@ -46,9 +46,12 @@
             this.AverageDispatchSize = new System.Windows.Forms.Label();
             this.TotalDispatch = new System.Windows.Forms.Label();
             this.pauseButton = new System.Windows.Forms.Button();
+            this.FiredPnl = new System.Windows.Forms.Panel();
+            this.BackBtn2 = new System.Windows.Forms.Button();
             this.LearnPnl.SuspendLayout();
             this.MainMenuPanel.SuspendLayout();
             this.ExitConfirmation.SuspendLayout();
+            this.FiredPnl.SuspendLayout();
             this.SuspendLayout();
             // 
             // PrimaryTimer
@@ -238,6 +241,28 @@
             this.pauseButton.UseVisualStyleBackColor = true;
             this.pauseButton.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // FiredPnl
+            // 
+            this.FiredPnl.BackgroundImage = global::BoxGame.Properties.Resources.gameover;
+            this.FiredPnl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.FiredPnl.Controls.Add(this.BackBtn2);
+            this.FiredPnl.Location = new System.Drawing.Point(325, 150);
+            this.FiredPnl.Name = "FiredPnl";
+            this.FiredPnl.Size = new System.Drawing.Size(795, 397);
+            this.FiredPnl.TabIndex = 18;
+            this.FiredPnl.Visible = false;
+            // 
+            // BackBtn2
+            // 
+            this.BackBtn2.BackgroundImage = global::BoxGame.Properties.Resources.BackBtn;
+            this.BackBtn2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackBtn2.Location = new System.Drawing.Point(576, 28);
+            this.BackBtn2.Name = "BackBtn2";
+            this.BackBtn2.Size = new System.Drawing.Size(150, 75);
+            this.BackBtn2.TabIndex = 0;
+            this.BackBtn2.UseVisualStyleBackColor = true;
+            this.BackBtn2.Click += new System.EventHandler(this.BackBtn2_Click);
+            // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -246,14 +271,15 @@
             this.BackgroundImage = global::BoxGame.Properties.Resources.GameBoard;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1392, 690);
+            this.Controls.Add(this.FiredPnl);
             this.Controls.Add(this.MainMenuPanel);
             this.Controls.Add(this.LearnPnl);
             this.Controls.Add(this.QuitJobBtn);
             this.Controls.Add(this.StartOverBtn);
-            this.Controls.Add(this.AverageDispatchSize);
-            this.Controls.Add(this.TotalDispatch);
-            this.Controls.Add(this.TotalScoreLabel);
             this.Controls.Add(this.pauseButton);
+            this.Controls.Add(this.TotalScoreLabel);
+            this.Controls.Add(this.TotalDispatch);
+            this.Controls.Add(this.AverageDispatchSize);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GameForm";
@@ -262,6 +288,7 @@
             this.LearnPnl.ResumeLayout(false);
             this.MainMenuPanel.ResumeLayout(false);
             this.ExitConfirmation.ResumeLayout(false);
+            this.FiredPnl.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,6 +311,8 @@
         private System.Windows.Forms.Label AverageDispatchSize;
         private System.Windows.Forms.Label TotalDispatch;
         private System.Windows.Forms.Button pauseButton;
+        private System.Windows.Forms.Panel FiredPnl;
+        private System.Windows.Forms.Button BackBtn2;
     }
 }
 

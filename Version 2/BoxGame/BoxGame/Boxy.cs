@@ -178,6 +178,7 @@ namespace BoxGame
             {
                 PrimaryTimer.Stop();
                 gameLost = true;
+                FiredPnl.Visible = true;
             }
 
             // Box Type 1 - Spawn Prime Box
@@ -702,6 +703,13 @@ namespace BoxGame
                 pauseButton.BackgroundImage = BoxGame.Properties.Resources.unpausebutton;
                 PrimaryTimer.Stop();
             }
+        }
+
+        private void BackBtn2_Click(object sender, EventArgs e)
+        {
+            MainMenuPanel.Visible = true;
+            PrimaryTimer.Stop();
+            FiredPnl.Visible = false;
         }
     }
 }
