@@ -171,7 +171,8 @@ namespace BoxGame
 
         private void SpawnBox()
         {
-            string spawnBoxType = (string)btn[currentXPos, 2].Tag;
+            string spawnBoxType = (string)btn[userX, 2].Tag;
+            Console.WriteLine("The Current Box Type Below Is - " + spawnBoxType);
 
             if (spawnBoxType == "prime" || spawnBoxType == "ups" || spawnBoxType == "fedex")
             {
@@ -184,7 +185,7 @@ namespace BoxGame
             {
                 // Spawn a new box (Change the image of an existing button)
                 btn[userX, 2].BackgroundImage = BoxGame.Properties.Resources.primebox;
-                btn[nextBoxType, 2].Tag = "prime";
+                btn[userX, 2].Tag = "prime";
                 currentBoxType = 1;
             }
 
@@ -193,7 +194,7 @@ namespace BoxGame
             {
                 // Spawn a new box (Change the image of an existing button)
                 btn[userX, 2].BackgroundImage = BoxGame.Properties.Resources.upsbox;
-                btn[nextBoxType, 2].Tag = "ups";
+                btn[userX, 2].Tag = "ups";
                 currentBoxType = 2;
             }
 
@@ -202,7 +203,7 @@ namespace BoxGame
             {
                 // Spawn a new box (Change the image of an existing button)
                 btn[userX, 2].BackgroundImage = BoxGame.Properties.Resources.fedexbox;
-                btn[nextBoxType, 2].Tag = "fedex";
+                btn[userX, 2].Tag = "fedex";
                 currentBoxType = 3;
             }
 
@@ -687,13 +688,13 @@ namespace BoxGame
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if(paused)
+            if (paused && gameLost == false)
             {
                 paused = false;
                 pauseButton.BackgroundImage = BoxGame.Properties.Resources.pausebutton;
                 PrimaryTimer.Start();
             }
-            else
+            if (!paused && gameLost == false)
             {
                 paused = true;
                 pauseButton.BackgroundImage = BoxGame.Properties.Resources.unpausebutton;
