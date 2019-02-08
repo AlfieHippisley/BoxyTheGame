@@ -718,12 +718,21 @@ namespace BoxGame
 
         private void easybutton_Click(object sender, EventArgs e)
         {
-
+            PrimaryTimer.Interval = 200;
         }
 
         private void MedButton_Click(object sender, EventArgs e)
         {
+            PrimaryTimer.Interval = 100;
+        }
 
+        private void HardButton_Click(object sender, EventArgs e)
+        {
+            PrimaryTimer.Interval = 50;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
         }
     }
 }

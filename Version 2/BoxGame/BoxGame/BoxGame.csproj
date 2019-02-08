@@ -82,6 +82,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="primebox.png" />
+    <None Include="Resources\medselect.png" />
+    <None Include="Resources\hardselect.png" />
+    <None Include="Resources\easyselect.png" />
+    <None Include="Resources\selecttitile.png" />
     <None Include="Resources\mediumbutton.png" />
     <None Include="Resources\hardbutton.png" />
     <None Include="Resources\easybutton.png" />

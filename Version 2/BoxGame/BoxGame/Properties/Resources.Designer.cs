@@ -342,6 +342,16 @@ namespace BoxGame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap selecttitile {
+            get {
+                object obj = ResourceManager.GetObject("selecttitile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap startagainbutton {
             get {
                 object obj = ResourceManager.GetObject("startagainbutton", resourceCulture);

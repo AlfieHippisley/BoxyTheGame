@@ -34,6 +34,7 @@
             this.LearnPnl = new System.Windows.Forms.Panel();
             this.BackBtn = new System.Windows.Forms.Button();
             this.MainMenuPanel = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.HardButton = new System.Windows.Forms.Button();
             this.MedButton = new System.Windows.Forms.Button();
             this.easybutton = new System.Windows.Forms.Button();
@@ -53,13 +54,13 @@
             this.BackBtn2 = new System.Windows.Forms.Button();
             this.LearnPnl.SuspendLayout();
             this.MainMenuPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.ExitConfirmation.SuspendLayout();
             this.FiredPnl.SuspendLayout();
             this.SuspendLayout();
             // 
             // PrimaryTimer
             // 
-            this.PrimaryTimer.Interval = 50;
             this.PrimaryTimer.Tick += new System.EventHandler(this.PrimaryTimer_Tick);
             // 
             // LearnPnl
@@ -92,6 +93,7 @@
             // 
             this.MainMenuPanel.BackgroundImage = global::BoxGame.Properties.Resources.MainMenuPic;
             this.MainMenuPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MainMenuPanel.Controls.Add(this.pictureBox1);
             this.MainMenuPanel.Controls.Add(this.HardButton);
             this.MainMenuPanel.Controls.Add(this.MedButton);
             this.MainMenuPanel.Controls.Add(this.easybutton);
@@ -107,6 +109,17 @@
             this.MainMenuPanel.TabIndex = 0;
             this.MainMenuPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainMenuPanel_Paint);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::BoxGame.Properties.Resources.selecttitile;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(89, 506);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(396, 50);
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // HardButton
             // 
             this.HardButton.BackgroundImage = global::BoxGame.Properties.Resources.hardbutton;
@@ -116,6 +129,7 @@
             this.HardButton.Size = new System.Drawing.Size(200, 100);
             this.HardButton.TabIndex = 13;
             this.HardButton.UseVisualStyleBackColor = true;
+            this.HardButton.Click += new System.EventHandler(this.HardButton_Click);
             // 
             // MedButton
             // 
@@ -145,7 +159,7 @@
             // 
             this.LearnBtn.BackgroundImage = global::BoxGame.Properties.Resources.learnbutton;
             this.LearnBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LearnBtn.Location = new System.Drawing.Point(285, 459);
+            this.LearnBtn.Location = new System.Drawing.Point(285, 383);
             this.LearnBtn.Margin = new System.Windows.Forms.Padding(4);
             this.LearnBtn.Name = "LearnBtn";
             this.LearnBtn.Size = new System.Drawing.Size(200, 100);
@@ -195,7 +209,7 @@
             // 
             this.QuitBtn.BackgroundImage = global::BoxGame.Properties.Resources.quitbutton;
             this.QuitBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.QuitBtn.Location = new System.Drawing.Point(493, 459);
+            this.QuitBtn.Location = new System.Drawing.Point(493, 382);
             this.QuitBtn.Margin = new System.Windows.Forms.Padding(4);
             this.QuitBtn.Name = "QuitBtn";
             this.QuitBtn.Size = new System.Drawing.Size(200, 100);
@@ -207,7 +221,7 @@
             // 
             this.PlayBtn.BackgroundImage = global::BoxGame.Properties.Resources.playbutton;
             this.PlayBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PlayBtn.Location = new System.Drawing.Point(77, 459);
+            this.PlayBtn.Location = new System.Drawing.Point(78, 383);
             this.PlayBtn.Margin = new System.Windows.Forms.Padding(4);
             this.PlayBtn.Name = "PlayBtn";
             this.PlayBtn.Size = new System.Drawing.Size(200, 100);
@@ -327,6 +341,7 @@
             this.Load += new System.EventHandler(this.GameForm_Load);
             this.LearnPnl.ResumeLayout(false);
             this.MainMenuPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ExitConfirmation.ResumeLayout(false);
             this.FiredPnl.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -356,6 +371,7 @@
         private System.Windows.Forms.Button easybutton;
         private System.Windows.Forms.Button MedButton;
         private System.Windows.Forms.Button HardButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
